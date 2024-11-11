@@ -1,0 +1,119 @@
+$sizes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$fonts: 8, 10, 12, 14, 15, 16, 18, 19, 20, 22, 24, 25, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50;
+$colors: primary, secondary, gray, dark, medium, danger, warning, black, success, white;
+
+@each $size in $sizes {
+  .mt-#{$size} {
+    margin-top: $size + rem;
+  }
+  .mb-#{$size} {
+    margin-bottom: $size + rem;
+  }
+  .my-#{$size} {
+    margin-top: $size + rem;
+    margin-bottom: $size + rem;
+  }
+  .ml-#{$size} {
+    margin-left: $size + rem;
+  }
+  .mr-#{$size} {
+    margin-right: $size + rem;
+  }
+}
+@each $size in $sizes {
+  .margintop-#{$size} {
+    margin-top: $size + px;
+  }
+}
+
+@each $weight in $weights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+@each $font in $fonts {
+  .fs-#{$font} {
+    font-size: $font + px;
+  }
+}
+
+@each $colors in $colors {
+  .text-#{$colors} {
+    color: var(--ion-color- + $colors);
+  }
+}
+
+@each $color in $colors{
+  .bg-#{$colors} {
+    background-color: var(--ion-color- + $colors);
+  }
+}
+
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.h-50 {height: 50%;}
+
+.v-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.h-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-block { display: block;}
+.d-flex{ display: flex; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.flex-justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.md-text {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+
+  @media screen and (min-height: 667px) {
+    font-size: 1.25rem;
+  }
+}
+
+.lg-text {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+
+  @media screen and (min-height: 667px) {
+    font-size: 1.75rem;
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase{
+  text-transform: lowercase;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+.text-initial{
+  text-transform: initial;
+}
+.text-white{
+  color: white;
+}
+.m-auto{
+  margin: auto;
+}
