@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-link{
+  font-family: 'Ethnocentric Rg';
+  color: #fff;
+}
+.nav-link:hover{
+  color: #a3a3a3;
+}
+.main-page,
+.left-side{
+  height: 100vh;
+}
+.right-side{
+  background: black;
+  height: 100vh;
+  padding: 30px;
+}
+.page-title{
+  font-family: 'Ethnocentric Rg';
+}
+.main-page-subtitle{
+  font-family: "Orbitron", sans-serif;
+}
+.carousel-img{
+  position: relative;
+  height: 100vh;
+  background-color: red;
+}
+.tpage-title{
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50% );
+}

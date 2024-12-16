@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="scss/helpers.scss">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
@@ -21,24 +21,30 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#1st">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Course</a>
-            </li>			
+              <a class="nav-link" href="#2nd">Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#3rd">Builds</a>
+            </li>						
+            <li class="nav-item">
+              <a class="nav-link" href="#4th">Badges</a>
+            </li>
           </ul>		  
         </div>
       </div>
     </nav>
 
-    <section class="main-page">
+    <section id="1st" class="main-page">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-5 left-side">
+          <div class="col-sm-12 col-md-5 col-lg-5 left-side">
             <div class="pt-5">
               <h2 class="pt-5 mt-4 pb-3 page-title text-white">Welcome To The <br> Round Table</h2>
-              <p class="pb-3 main-page-subtitle"> The 1990s were a golden era for automotive legends, with iconic cars like the Nissan Skyline GT-R, Honda NSX, Toyota Supra, Mazda RX-7 FC, Subaru WRX GC8, and Mitsubishi Lancer Evolution 9 MR. These cars, defined by speed and innovation, continue to influence modern automotive design and culture. </p>
-              <button type="button" class="btn btn-outline-light btn-block w-50">Explore</button>
+              <p class="pb-3 main-page-subtitle text-white"> Toyota’s luxury cars, like the elegant Crown, the sporty Chaser, the refined Cresta, and the versatile Mark II, combine sophistication, performance, and innovation. These iconic models showcase Toyota’s commitment to comfort, advanced technology, and timeless design, redefining luxury for those who seek the extraordinary. </p>
+              <a href="#2nd" class="btn btn-outline-light btn-block w-50">Explore</a>
             </div>
           </div>
           <div class="col-7 .d-sm-none .d-md-block "></div>
@@ -46,63 +52,168 @@
       </div>
     </section>
     
-    <section class="second-page">
+    <section id="2nd" class="second-page">
       <div class="container-fluid pt-5">
-        <h1 class="pt-4 pb-4 page-title text-center"> Choose your royalty</h1>
+        <h1 class="pt-4 pb-4 page-title text-center text-white"> Choose your royalty</h1>
         <div class="row">
           <div class="col text-center">
 
             <div class="card">
               <div class="card-inner">
                 <div class="card-front">
-                  <p>Front Side</p>
+                  <div class="">
+                    <img class="badge-icon" src="./assets/icons/chaser-logo.svg" width="250" height="300">
+                    <div class="mt-3 car-name">Chaser</div>
+                  </div>
                 </div>
-                <div class="card-back">
-                  <p>Back Side</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <p>Front Side</p>
-                </div>
-                <div class="card-back">
-                  <p>Back Side</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <p>Front Side</p>
-                </div>
-                <div class="card-back">
-                  <p>Back Side</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <p>Front Side</p>
-                </div>
-                <div class="card-back">
-                  <p>Back Side</p>
+                <div class="card-back chaser">
+                  <div class="car-info">
+                    <div class="car-img-back mt-1 bg-danger"></div>
+                    <div class="mt-1">JZX100 2JZ-GE</div>
+                    <div class="car-specs mt-2 mb-4">
+                      <div class="engine">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="hp">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="drivetrain">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                    </div>
+                    <a href="chaser.html" class="btn btn-outline-light btn-block" style="width: 100%;">View</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card">
+            <div class="card mx-1">
               <div class="card-inner">
                 <div class="card-front">
-                  <p>Front Side</p>
+                  <div class="">
+                    <img class="badge-icon" src="./assets/icons/century-logo.png" width="250" height="300">
+                    <div class="mt-3 car-name">Century</div>
+                  </div>
                 </div>
-                <div class="card-back">
-                  <p>Back Side</p>
+                <div class="card-back chaser">
+                  <div class="car-info">
+                    <div class="car-img-back mt-1 bg-danger"></div>
+                    <div class="mt-1">G50 1GZ-FE </div>
+                    <div class="car-specs mt-2 mb-4">
+                      <div class="engine">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="hp">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="drivetrain">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light " style="width: 100%;">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mx-1">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div>
+                    <img class="badge-icon" src="./assets/icons/crown.svg">
+                    <div class="mt-3 car-name">Crown</div>
+                  </div>
+                </div>
+                <div class="card-back chaser">
+                  <div class="car-info">
+                    <div class="car-img-back mt-1 bg-danger"></div>
+                    <div class="mt-1">S220 8GR-FXS</div>
+                    <div class="car-specs mt-2 mb-4">
+                      <div class="engine">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="hp">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="drivetrain">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light " style="width: 100%;">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mx-1">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div>
+                    <img src="./assets/icons/cresta-logo.png" width="250" height="300">
+                    <div class="mt-3 car-name">Cresta</div>
+                  </div>
+                </div>
+                <div class="card-back chaser">
+                  <div class="car-info">
+                    <div class="car-img-back mt-1 bg-danger"></div>
+                    <div class="mt-1">X100 1JZ-GTE</div>
+                    <div class="car-specs mt-2 mb-4">
+                      <div class="engine">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="hp">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="drivetrain">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light " style="width: 100%;">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mx-1">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div>
+                    <img src="./assets/icons/mark2-logo.png" width="250" height="300">
+                    <div class="mt-3 car-name">Cressida</div>
+                  </div>
+                </div>
+                <div class="card-back chaser">
+                  <div class="car-info">
+                    <div class="car-img-back mt-1 bg-danger"></div>
+                    <div class="mt-1">MK2 2JZ-GE</div>
+                    <div class="car-specs mt-2 mb-4">
+                      <div class="engine">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="hp">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                      <div class="drivetrain">
+                        <div class="">test</div>
+                        <div class="">test</div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light " style="width: 100%;">View</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -112,18 +223,85 @@
       </div>
     </section>
 
-    <section class="third-page">
+    <section id="3rd" class="third-page">
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators mb-4">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-img active">
+              <div class="carousel-caption d-none d-md-block" c>
+                <h5 class="page-title">Drift</h5>
+                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item carousel-img">
+              <div class="carousel-caption d-none d-md-block" c>
+                <h5 class="page-title">Grip</h5>
+                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-img">
+              <div class="carousel-caption d-none d-md-block" c>
+                <h5 class="page-title">Track</h5>
+                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item carousel-img">
+              <div class="carousel-caption d-none d-md-block" c>
+                <h5 class="page-title">Luxury</h5>
+                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+
+            <div class="tpage-title text-center pt-5">
+              <h1 class="page-title">Builds</h1>
+              <h3 class="main-page-subtitle">Royalty requires skill</h3>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="4th" class="fourth-page">
       <div class="container-fluid">
         <div class="row">
-          <div class="col left-side bg-danger">
-            <h1 class="pt-5">About <br> the badges</h1>
+          <div class="col-sm-12 col-md-6 col-lg-6 left-side p-5">
+            <h2 class="text-white car-name">Vehicles<br> Representation</h2>
             <div class="mt-4 img-container">
 
             </div>
           </div>
-          <div class="col right-side">
-            <div class="pt-5">
-              <div class="mt-5">test</div>
+          <div class="col-sm-12 col-md-6 col-lg-6 right-side px-4">
+            <div class="car-badge">
+              <h1 class="pt-5">Cresta<i class="fa-solid fa-crown"></i></h1>
+              <p class="car-badge-info">The Toyota Cresta is a premium sedan that blends refined design with impressive performance. With its sleek appearance and powerful engine options, it provides a smooth, engaging drive, offering both luxury and strength.</p>
+            </div>
+            <div class="car-badge">
+              <h1>Crown<i class="fa-solid fa-crown"></i></h1>
+              <p class="car-badge-info">The Toyota Crown, introduced in 1955, is Toyota's longest-running sedan, renowned for its luxury and innovation. Often used by government officials in Japan, it symbolizes prestige and reliability, evolving into a global icon of comfort and sophistication.</p>
+            </div>
+            <div class="car-badge">
+              <h1>Chaser<i class="fa-solid fa-crown"></i></h1>
+              <p class="car-badge-info">The Toyota Chaser is a high-performance luxury sedan, renowned for its powerful engines and dynamic driving experience. With its sleek design and robust inline-six engine, it offers a perfect balance of speed, comfort, and sophistication, making it a favorite among driving enthusiasts.</p>
+            </div>
+            <div class="car-badge">
+              <h1>Century<i class="fa-solid fa-crown"></i></h1>
+              <p class="car-badge-info">The Toyota Century is Japan’s ultimate luxury sedan, embodying elegance, craftsmanship, and exclusivity. Introduced in 1967, it was designed as a flagship vehicle for dignitaries and business elites, offering timeless design and exceptional comfort</p>
+            </div>
+            <div class="car-badge">
+              <h1>Cressida<i class="fa-solid fa-crown"></i></h1>
+              <p class="car-badge-info">The Toyota Mark II is a luxury sedan offering powerful engines, including inline-six and V6 options, for a premium driving experience. It blends high performance with refined comfort, making it a top choice for those seeking both power and elegance.</p>
             </div>
           </div>
         </div>
