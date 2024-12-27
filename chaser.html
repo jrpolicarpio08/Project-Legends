@@ -21,8 +21,11 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="#1st">Home</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#2nd">History</a>
+            </li>				
             <li class="nav-item">
               <a class="nav-link" href="#3rd">Builds</a>
             </li>				
@@ -32,6 +35,33 @@
     </nav>
 
     <section id="1st" class="main-page">
+      <div class="container">
+        <div class="row pt-3">
+
+          <div class="col text-center">
+
+            <div class="pt-4">
+              <div class="collage-pillar"></div>
+              <div class="collage-pillar pillar-center"></div>
+              <div class="collage-pillar"></div>
+            </div>
+            
+            <div>
+              <img class="car-model" src="./assets/img/chaser-model.png">
+            </div>
+
+            <h4 class="page-title pt-4">Chaser JZX100</h4>
+            <div class="main-page-subtitle">276HP - 2JZ GE - RWD</div>
+
+            <a href="#2nd" class="nav-link pt-2" id="blinking-button"> <i class="fa-solid fa-arrow-down-long"></i> </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="2nd" class="main-page">
       <div class="container-fluid">
         <div class="row">
           <div class="col-5 .d-sm-none .d-md-block">
@@ -48,39 +78,277 @@
 
     <section id="3rd" class="third-page">
       <div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators mb-4">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-inner">
+
             <div class="carousel-item carousel-img active">
-              <div class="carousel-caption">
-                <h5 class="page-title">Drift</h5>
-                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-lg-4 col-md-4 col-xxl-2 p-5" style="height: 100vh;background-color: black;">
+                      <h1 class="text-white text-center page-title mb-4"> Builds</h1>
+                      <div class="specs-sheet p-4">
+                        <h2 class="text-center page-title text-white mb-4"> Drift </h2>
+                        <div class="d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/engine-icon.svg"> 
+                          </div>
+                          <div class="engine-info text-white main-page-subtitle"> 
+                            <h5>: 500HP 2JZ-GE</h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/suspension-icon.svg"> 
+                          </div>
+                          <div class="suspension-info text-white main-page-subtitle"> 
+                            <h5>: BCR ZR-FL-CRNR </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/brakes-icon.svg"> 
+                          </div>
+                          <div class="brakes-info text-white main-page-subtitle"> 
+                            <h5>: BREMBO BBK  </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/rims-icon.svg"> 
+                          </div>
+                          <div class="wheels-info text-white main-page-subtitle"> 
+                            <h5>: ENKEI PF01 </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/tires-icon.svg"> 
+                          </div>
+                          <div class="tires-info text-white main-page-subtitle"> 
+                            <h5>: TOYO 88RS </h5>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-8 col-xxl-10 chaser-drift" id="chaser-drift" style="height: 100vh;">
+                    <div class="container-fluid">
+                      <div class="p-5">
+                        <div class="d-flex">
+
+                          <div class="prv-btn-start-group">
+                            <div class="mt-3">
+                              <div class="btn-border-start text-center" id="btn-border-start">
+                                <button onclick="carTrackPreview()" id="prv-btn-start" class="btn btn-primary prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="prv-btn-mid-grp">
+                            <div class="mt-3">
+                              <div class="btn-border-mid text-center">
+                                <button onclick="engineTrackPreview()" class="btn btn-primary prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="prv-btn-end-grp">
+                            <div class="mt-3">
+                              <div class="btn-border-end text-center">
+                                <button onclick="wheelTrackPreview()" class="btn btn-primary prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
 
             <div class="carousel-item carousel-img">
-              <div class="carousel-caption">
-                <h5 class="page-title">Track</h5>
-                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-lg-4 col-md-4 col-xxl-2 p-5" style="height: 100vh;background-color: black;">
+                    <div>
+                      <h1 class="text-white text-center page-title mb-4"> Builds</h1>
+                      <div class="specs-sheet p-4">
+                        <h2 class="text-center page-title text-white mb-4"> Track </h2>
+                        <div class="d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/engine-icon.svg"> 
+                          </div>
+                          <div class="engine-info text-white main-page-subtitle"> 
+                            <h5>: 800HP 2JZ-GE</h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/suspension-icon.svg"> 
+                          </div>
+                          <div class="suspension-info text-white main-page-subtitle"> 
+                            <h5>: DYNAMIC PTS </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/brakes-icon.svg"> 
+                          </div>
+                          <div class="brakes-info text-white main-page-subtitle"> 
+                            <h5>: D2 RACING BBK  </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/rims-icon.svg"> 
+                          </div>
+                          <div class="wheels-info text-white main-page-subtitle"> 
+                            <h5>: BBS EVO MR  </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/tires-icon.svg"> 
+                          </div>
+                          <div class="tires-info text-white main-page-subtitle"> 
+                            <h5>: Federal 595 RS-RR </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-8 col-xxl-10  chaser-track" id="chaser-track" style="height: 100vh;">
+                    <div class="container-fluid">
+                      <div class="p-5">
+                        <div class="d-flex">
+
+                          <div class="prv-btn-start-group">
+                            <div class="mt-3">
+                              <div class="btn-border-start text-center" id="btn-border-start">
+                                <button onclick="carTrackPreview()" id="prv-btn-start" class="btn btn-primary prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="prv-btn-mid-grp">
+                            <div class="mt-3">
+                              <div class="btn-border-mid text-center">
+                                <button onclick="engineTrackPreview()" class="btn btn-primary prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="prv-btn-end-grp">
+                            <div class="mt-3">
+                              <div class="btn-border-end text-center">
+                                <button onclick="wheelTrackPreview()" class="btn btn-primary prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
+
 
             <div class="carousel-item carousel-img">
-              <div class="carousel-caption">
-                <h5 class="page-title">Luxury</h5>
-                <p class="mb-4">Some representative placeholder content for the first slide.</p>
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-lg-4 col-md-4 col-xxl-2 p-5" style="height: 100vh;background-color: black;">
+                    <div>
+                      <h1 class="text-white text-center page-title mb-4"> Builds</h1>
+                      <div class="specs-sheet p-4">
+                        <h2 class="text-center page-title text-white mb-4"> VIP </h2>
+                        <div class="d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/engine-icon.svg"> 
+                          </div>
+                          <div class="engine-info text-white main-page-subtitle"> 
+                            <h5>: 500HP 2JZ-GE</h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/suspension-icon.svg"> 
+                          </div>
+                          <div class="suspension-info text-white main-page-subtitle"> 
+                            <h5>: BCR ZR-FL-CRNR </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/brakes-icon.svg"> 
+                          </div>
+                          <div class="brakes-info text-white main-page-subtitle"> 
+                            <h5>: BREMBO BBK  </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/rims-icon.svg"> 
+                          </div>
+                          <div class="wheels-info text-white main-page-subtitle"> 
+                            <h5>: ENKEI PF01 </h5>
+                          </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                          <div class=" svg-white"> 
+                            <img width="50" height="50" src="./assets/icons/tires-icon.svg"> 
+                          </div>
+                          <div class="tires-info text-white main-page-subtitle"> 
+                            <h5>: TOYO 88RS </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-8 col-xxl-10  chaser-track" id="chaser-track" style="height: 100vh;">
+                    <div class="container-fluid">
+                      <div class="p-5">
+                        <div class="d-flex">
+
+                          <div class="prv-btn-start-group">
+                            <div class="mt-3">
+                              <div class="btn-border-start text-center" id="btn-border-start">
+                                <button onclick="carTrackPreview()" id="prv-btn-start" class="btn btn-primary prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="prv-btn-mid-grp">
+                            <div class="mt-3">
+                              <div class="btn-border-mid text-center">
+                                <button onclick="engineTrackPreview()" class="btn btn-primary prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="prv-btn-end-grp">
+                            <div class="mt-3">
+                              <div class="btn-border-end text-center">
+                                <button onclick="wheelTrackPreview()" class="btn btn-primary prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
-
-            <div class="tpage-title text-center pt-5">
-              <h1 class="page-title">Builds</h1>
-            </div>
+            
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" style="width: 30px;" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           </button>
@@ -88,6 +356,9 @@
       </div>
     </section>
     
+    <script src="./js/prv-btn-effects.js"></script>
+    <script src="./js/chaser-bg-changer.js"></script>
+    <script src="./js/navlink-change-color-chaser.js"></script>
 
   </body>
 

@@ -6,11 +6,10 @@ html {
 }
 .nav-link{
   font-family: 'Ethnocentric Rg';
-  color: #fff;
 }
 .nav-link:hover{
-  color: #a3a3a3;
-}
+  color: inherit;
+} 
 .main-page,
 .left-side{
   height: 100vh;
@@ -29,11 +28,118 @@ html {
 .carousel-img{
   position: relative;
   height: 100vh;
-  background-color: red;
 }
 .tpage-title{
   position: absolute;
   margin: 0 auto;
   left: 50%;
   transform: translate(-50% );
+}
+.collage-pillar{
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 70vh;
+  background-color: red;
+}
+.pillar-center{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.car-model{
+  position: absolute;
+  height: 300px;
+  left: 50%;
+  top: 40vh;
+  transform: translate(-50%);
+}
+@keyframes blink {
+  0%, 100% {opacity: };
+  50% {opacity: 0};
+}
+#blinking-button {
+  animation: blink 2s linear infinite;
+}
+#chaser-drift {
+  background-image: url(../assets/img/chaser-drift2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s ease;
+}
+#chaser-track{
+  background-image: url(../assets/img/chaser-track.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.specs-sheet{
+  display: inline-block;
+  height: 75vh;
+  width: 100%;
+  border: 2px solid #fff;
+}
+.svg-white{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.engine-info,
+.suspension-info,
+.brakes-info,
+.wheels-info,
+.tires-info{
+  margin-left: 10px;
+  margin-top: 13px;
+}
+.btn-border-start{
+  background: black;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.prv-btn-end-grp,
+.prv-btn-mid-grp{
+  margin-left: -30px;
+}
+.btn-border-mid{
+  background: black;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.btn-border-end{
+  background: black;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.prv-btn-start{
+  margin-top: 5px;
+  width: 140px;
+  clip-path: polygon(0% 0%, 97% 0%, 75% 100%, 0% 100%);
+  border-radius: 0px;
+}
+.prv-btn-mid{
+  margin-top: 5px;
+  width: 140px;
+  clip-path: polygon(26% 0%, 96% 0%, 75% 100%, 6% 100%);
+  border-radius: 0px;
+}
+.prv-btn-end{
+  margin-top: 5px;
+  width: 140px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 5% 100%);
+  border-radius: 0px;
+}
+.prv-btn-start-lbl{
+  margin-left: -19px;
+}
+.prv-btn-end-lbl{
+  margin-right: -26px;
+}
+.hovered{
+  background:red;
 }
