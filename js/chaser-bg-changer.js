@@ -36,14 +36,29 @@
 //         div.classList.add("fade-in");
 //     }, 200); 
 // }
-function carTrackPreview() {
-    document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track.png)";
- }
 
- function engineTrackPreview() {
-    document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track-engine.png)";
- }
+// function carTrackPreview() {
+//     document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track.png)";
+//  }
+
+//  function engineTrackPreview() {
+//     document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track-engine.png)";
+//  }
+
+// function wheelTrackPreview() {
+//     document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track-wheel.png)";
+//  }
+function carTrackPreview() {
+    const newBackground = "url(/Project-Legends/assets/img/chaser-track.png)";
+    document.getElementById("chaser-track").style.backgroundImage = newBackground;
+}
+
+function engineTrackPreview() {
+    const newBackground = "url(/Project-Legends/assets/img/chaser-track-engine.png)";
+    document.getElementById("chaser-track").style.backgroundImage = newBackground;
+}
 
 function wheelTrackPreview() {
-    document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track-wheel.png)";
- }
+    const newBackground = "url(/Project-Legends/assets/img/chaser-track-wheel.png)";
+    document.getElementById("chaser-track").style.backgroundImage = newBackground;
+}
