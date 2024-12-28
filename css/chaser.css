@@ -61,14 +61,14 @@ html {
   animation: blink 2s linear infinite;
 }
 #chaser-drift {
-  background-image: url('/assets/img/chaser-drift2.png');
+  background-image: url('Project-Legends/assets/img/chaser-drift2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: opacity 0.2s ease;
 }
 #chaser-track{
-  background-image: url('/assets/img/chaser-track.png');
+  background-image: url('Project-Legends/assets/img/chaser-track.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
