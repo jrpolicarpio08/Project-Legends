@@ -48,17 +48,3 @@ function carTrackPreview() {
 function wheelTrackPreview() {
     document.getElementById("chaser-track").style.backgroundImage = "url('../assets/img/chaser-track-wheel.png')";
  }
-// function carTrackPreview() {
-//     const newBackground = "url(../assets/img/chaser-track.png')";
-//     document.getElementById("chaser-track").style.backgroundImage = newBackground;
-// }
-
-// function engineTrackPreview() {
-//     const newBackground = "url(../assets/img/chaser-track-engine.png')";
-//     document.getElementById("chaser-track").style.backgroundImage = newBackground;
-// }
-
-// function wheelTrackPreview() {
-//     const newBackground = "url(../assets/img/chaser-track-wheel.png')";
-//     document.getElementById("chaser-track").style.backgroundImage = newBackground;
-// }
