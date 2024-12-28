@@ -37,28 +37,28 @@
 //     }, 200); 
 // }
 
-// function carTrackPreview() {
-//     document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track.png)";
-//  }
-
-//  function engineTrackPreview() {
-//     document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track-engine.png)";
-//  }
-
-// function wheelTrackPreview() {
-//     document.getElementById("chaser-track").style.backgroundImage = "url(../assets/img/chaser-track-wheel.png)";
-//  }
 function carTrackPreview() {
-    const newBackground = "url('/Project-Legends/assets/img/chaser-track.png')";
-    document.getElementById("chaser-track").style.backgroundImage = newBackground;
-}
+    document.getElementById("chaser-track").style.backgroundImage = "url('../assets/img/chaser-track.png')";
+ }
 
-function engineTrackPreview() {
-    const newBackground = "url('/Project-Legends/assets/img/chaser-track-engine.png')";
-    document.getElementById("chaser-track").style.backgroundImage = newBackground;
-}
+ function engineTrackPreview() {
+    document.getElementById("chaser-track").style.backgroundImage = "url('../assets/img/chaser-track-engine.png')";
+ }
 
 function wheelTrackPreview() {
-    const newBackground = "url('/Project-Legends/assets/img/chaser-track-wheel.png')";
-    document.getElementById("chaser-track").style.backgroundImage = newBackground;
-}
+    document.getElementById("chaser-track").style.backgroundImage = "url('../assets/img/chaser-track-wheel.png')";
+ }
+// function carTrackPreview() {
+//     const newBackground = "url(../assets/img/chaser-track.png')";
+//     document.getElementById("chaser-track").style.backgroundImage = newBackground;
+// }
+
+// function engineTrackPreview() {
+//     const newBackground = "url(../assets/img/chaser-track-engine.png')";
+//     document.getElementById("chaser-track").style.backgroundImage = newBackground;
+// }
+
+// function wheelTrackPreview() {
+//     const newBackground = "url(../assets/img/chaser-track-wheel.png')";
+//     document.getElementById("chaser-track").style.backgroundImage = newBackground;
+// }

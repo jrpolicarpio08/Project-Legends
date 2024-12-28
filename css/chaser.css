@@ -60,14 +60,16 @@ html {
 #blinking-button {
   animation: blink 2s linear infinite;
 }
-#chaser-drift {
+#chaser-drift,
+.chaser-drift {
   background-image: url(../assets/img/chaser-drift2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: opacity 0.2s ease;
 }
-#chaser-track{
+#chaser-track,
+.chaser-track{
   background-image: url(../assets/img/chaser-track.png);
   background-position: center;
   background-repeat: no-repeat;
