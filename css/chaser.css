@@ -142,6 +142,22 @@ html {
 .prv-btn-end-lbl{
   margin-right: -26px;
 }
-.hovered{
-  background:red;
-}
+@media only screen and (min-width: 1440px) { 
+
+  .nav-link{
+    font-size: 30px;
+  }
+
+  .car-model{
+    height: 600px;
+    top: 38vh;
+  }
+
+  .car-name{
+    margin-top: 40px;
+    font-size: 35px;
+  }
+  .car-specs{
+    font-size: 25px;
+  }
+ }
