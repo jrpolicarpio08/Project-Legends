@@ -62,7 +62,7 @@ html {
 }
 #chaser-drift,
 .chaser-drift {
-  background-image: url(../assets/img/chaser-drift2.png);
+  background-image: url(../assets/img/chaser-drift3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,6 +71,13 @@ html {
 #chaser-track,
 .chaser-track{
   background-image: url(../assets/img/chaser-track.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#chaser-oem,
+.chaser-oem{
+  background-image: url(../assets/img/chaser-oem.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,16 +155,31 @@ html {
     font-size: 30px;
   }
 
+  .collage-pillar{
+    width: 150px;
+  }
+  .pillar-center{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
   .car-model{
     height: 600px;
-    top: 38vh;
+    top: 39vh;
   }
 
   .car-name{
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 35px;
   }
   .car-specs{
     font-size: 25px;
+  }
+  .car-name-title{
+    font-size: 70px;
+    margin-top: 100px;
+  }
+  .car-description{
+    font-size: 35px;
   }
  }
