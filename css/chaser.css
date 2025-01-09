@@ -11,8 +11,15 @@ html {
   color: inherit;
 } 
 .main-page,
-.left-side{
+.left-side,
+.factory-car-img{
   height: 100vh;
+}
+.factory-car-img{
+  background-image: url(../assets/img/chaser-factory.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .right-side{
   background: black;
@@ -62,7 +69,7 @@ html {
 }
 #chaser-drift,
 .chaser-drift {
-  background-image: url(../assets/img/chaser-drift3.png);
+  background-image: url(../assets/img/chaser-drift.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
