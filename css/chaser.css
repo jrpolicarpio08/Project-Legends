@@ -1,6 +1,133 @@
 @import url('https://fonts.cdnfonts.com/css/ethnocentric');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}
+.fadeInDownBigLeft {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDownBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDownBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}
+.fadeInDownBigCenter{
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDownBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDownBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}
+.fadeInDownBigRight{
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+  -webkit-animation-duration: 1.12s;
+  animation-duration: 1.12s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDownBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDownBig {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}  
 html {
   scroll-behavior: smooth;
 }
@@ -42,23 +169,39 @@ html {
   left: 50%;
   transform: translate(-50% );
 }
+
 .collage-pillar{
   display: inline-block;
   position: relative;
   width: 100px;
   height: 70vh;
-  background-color: red;
+}
+.pillar-left{
+  background-image: url(../assets/img/chaser-pillar1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .pillar-center{
   margin-left: 20px;
   margin-right: 20px;
+  background-image: url(../assets/img/chaser-pillar2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pillar-right{
+  background-image: url(../assets/img/chaser-pillar3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .car-model{
   position: absolute;
   height: 300px;
-  left: 50%;
+  left: 25%;
   top: 40vh;
-  transform: translate(-50%);
+  transform: translate(-25%);
 }
 @keyframes blink {
   0%, 100% {opacity: };
@@ -173,6 +316,8 @@ html {
   .car-model{
     height: 600px;
     top: 39vh;
+    left: 30%;
+    transform: translate(-30%);
   }
 
   .car-name{
