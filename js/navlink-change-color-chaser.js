@@ -18,10 +18,10 @@ const changeNavLinkColor = () => {
                 hoverColor = 'red';
             } else if (sectionId === '2nd') {
                 navLinks.forEach(link => link.style.color = 'white');
-                hoverColor = 'blue';
+                hoverColor = 'red';
             } else if (sectionId === '3rd') {
                 navLinks.forEach(link => link.style.color = 'white');
-                hoverColor = 'green';
+                hoverColor = 'red';
             }
 
             navLinks.forEach(link => {

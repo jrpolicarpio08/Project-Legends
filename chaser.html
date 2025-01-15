@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="scss/helpers.scss">
     <link rel="stylesheet" href="css/chaser.css">
+    <link rel="stylesheet" href="css/animations.css">
   </head>
 
   <body>
@@ -86,47 +86,37 @@
                 <div class="row">
 
                   <div class="col-lg-4 col-md-4 col-xxl-3 p-5" style="height: 100vh;background-color: black;">
-                      <h1 class="text-white text-center page-title mb-4"> Builds</h1>
+                      <div class="text-white text-center page-title builds mb-4"> Builds</div>
                       <div class="specs-sheet p-4">
-                        <h2 class="text-center page-title text-white mb-4"> Drift </h2>
+                        <div class="text-center page-title text-white build-variant mb-4"> Drift </div>
                         <div class="d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/engine-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
                           <div class="engine-info text-white main-page-subtitle"> 
-                            <h5>: 500HP 2JZ-GE</h5>
+                            <div>: 500HP 2JZ-GE</div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/suspension-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
                           <div class="suspension-info text-white main-page-subtitle"> 
-                            <h5>: BCR ZR-FL-CRNR </h5>
+                            <div>: BCR ZR-FL-CRNR </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/brakes-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
                           <div class="brakes-info text-white main-page-subtitle"> 
-                            <h5>: BREMBO BBK  </h5>
+                            <div>: BREMBO BBK  </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/rims-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
                           <div class="wheels-info text-white main-page-subtitle"> 
-                            <h5>: ENKEI PF01 </h5>
+                            <div>: ENKEI PF01 </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/tires-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
                           <div class="tires-info text-white main-page-subtitle"> 
-                            <h5>: TOYO 88RS </h5>
+                            <div>: TOYO 88RS </div>
                           </div>
                         </div>
                       </div>
@@ -140,21 +130,21 @@
                           <div class="prv-btn-start-group">
                             <div class="mt-3">
                               <div class="btn-border-start text-center" id="btn-drift-border-start">
-                                <button onclick="carDriftPreview()" id="prv-drift-btn-start" class="btn btn-primary prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
+                                <button onclick="carDriftPreview()" id="prv-drift-btn-start" class="btn btn-dark prv-btn-start prv-btn" style="border: 0px;"><span class="page-title prv-btn-start-lbl">CAR</span></button>
                               </div>
                             </div>
                           </div>
                           <div class="prv-btn-mid-grp">
                             <div class="mt-3">
                               <div class="btn-border-mid text-center" id="btn-drift-border-mid">
-                                <button onclick="engineDriftPreview()" id="prv-drift-btn-mid" class="btn btn-primary prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
+                                <button onclick="engineDriftPreview()" id="prv-drift-btn-mid" class="btn btn-dark prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
                               </div>
                             </div>
                           </div>
                           <div class="prv-btn-end-grp">
                             <div class="mt-3">
                               <div class="btn-border-end text-center" id="btn-drift-border-end">
-                                <button onclick="wheelDriftPreview()" id="prv-drift-btn-end" class="btn btn-primary prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
+                                <button onclick="wheelDriftPreview()" id="prv-drift-btn-end" class="btn btn-dark prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
                               </div>
                             </div>
                           </div>
@@ -171,50 +161,39 @@
             <div class="carousel-item carousel-img">
               <div class="container-fluid">
                 <div class="row">
-
                   <div class="col-lg-4 col-md-4 col-xxl-3 p-5" style="height: 100vh;background-color: black;">
                     <div>
-                      <h1 class="text-white text-center page-title mb-4"> Builds</h1>
+                      <div class="text-white text-center page-title builds mb-4"> Builds</div>
                       <div class="specs-sheet p-4">
-                        <h2 class="text-center page-title text-white mb-4"> Track </h2>
+                        <h2 class="text-center page-title text-white build-variant mb-4"> Track </h2>
                         <div class="d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/engine-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
                           <div class="engine-info text-white main-page-subtitle"> 
-                            <h5>: 800HP 2JZ-GE</h5>
+                            <div>: 800HP 2JZ-GE</div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/suspension-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
                           <div class="suspension-info text-white main-page-subtitle"> 
-                            <h5>: DYNAMIC PTS </h5>
+                            <div>: DYNAMIC PTS </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/brakes-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
                           <div class="brakes-info text-white main-page-subtitle"> 
-                            <h5>: D2 RACING BBK  </h5>
+                            <div>: D2 RACING BBK  </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/rims-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
                           <div class="wheels-info text-white main-page-subtitle"> 
-                            <h5>: BBS EVO MR  </h5>
+                            <div>: BBS EVO MR  </div>
                           </div>
                         </div>
-                        <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/tires-icon.svg"> 
-                          </div>
+                        <div class="mt-4 d-flex"> 
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
                           <div class="tires-info text-white main-page-subtitle"> 
-                            <h5>: Federal 595 RS-RR </h5>
+                            <div>: Federal 595 RS-RR </div>
                           </div>
                         </div>
                       </div>
@@ -229,21 +208,21 @@
                           <div class="prv-btn-start-group">
                             <div class="mt-3">
                               <div class="btn-border-start text-center" id="btn-track-border-start">
-                                <button onclick="carTrackPreview()" id="prv-track-btn-start" class="btn btn-primary prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
+                                <button onclick="carTrackPreview()" id="prv-track-btn-start" class="btn btn-dark prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
                               </div>
                             </div>
                           </div>
                           <div class="prv-btn-mid-grp">
                             <div class="mt-3">
                               <div class="btn-border-mid text-center" id="btn-track-border-mid">
-                                <button onclick="engineTrackPreview()" id="prv-track-btn-mid" class="btn btn-primary prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
+                                <button onclick="engineTrackPreview()" id="prv-track-btn-mid" class="btn btn-dark prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
                               </div>
                             </div>
                           </div>
                           <div class="prv-btn-end-grp">
                             <div class="mt-3">
                               <div class="btn-border-end text-center" id="btn-track-border-end">
-                                <button onclick="wheelTrackPreview()" id="prv-track-btn-end" class="btn btn-primary prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
+                                <button onclick="wheelTrackPreview()" id="prv-track-btn-end" class="btn btn-dark prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
                               </div>
                             </div>
                           </div>
@@ -264,47 +243,37 @@
 
                   <div class="col-lg-4 col-md-4 col-xxl-3 p-5" style="height: 100vh;background-color: black;">
                     <div>
-                      <h1 class="text-white text-center page-title mb-4"> Builds</h1>
+                      <div class="text-white text-center page-title builds mb-4"> Builds</div>
                       <div class="specs-sheet p-4">
-                        <h2 class="text-center page-title text-white mb-4"> OEM+ </h2>
+                        <div class="text-center page-title text-white build-variant mb-4"> OEM+ </div>
                         <div class="d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/engine-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
                           <div class="engine-info text-white main-page-subtitle"> 
-                            <h5>: 300HP 2JZ-GE</h5>
+                            <div>: 300HP 2JZ-GE</div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/suspension-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
                           <div class="suspension-info text-white main-page-subtitle"> 
-                            <h5>: MCA VSTN Comfort </h5>
+                            <div>: MCA VSTN Comfort </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/brakes-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
                           <div class="brakes-info text-white main-page-subtitle"> 
-                            <h5>: BREMBO BBK  </h5>
+                            <div>: BREMBO BBK  </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/rims-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
                           <div class="wheels-info text-white main-page-subtitle"> 
-                            <h5>: WORK CR 3P </h5>
+                            <div>: WORK CR 3P </div>
                           </div>
                         </div>
                         <div class="mt-4 d-flex">
-                          <div class=" svg-white"> 
-                            <img width="50" height="50" src="./assets/icons/tires-icon.svg"> 
-                          </div>
+                          <img width="50" height="50" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
                           <div class="tires-info text-white main-page-subtitle"> 
-                            <h5>: NEXEN N Fera SU4 </h5>
+                            <div>: NEXEN N Fera SU4 </div>
                           </div>
                         </div>
                       </div>
@@ -315,25 +284,24 @@
                     <div class="container-fluid">
                       <div class="p-5">
                         <div class="d-flex">
-
                           <div class="prv-btn-start-group">
                             <div class="mt-3">
                               <div class="btn-border-start text-center" id="btn-vip-border-start">
-                                <button onclick="carOemPreview()" id="prv-vip-btn-start" class="btn btn-primary prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
+                                <button onclick="carOemPreview()" id="prv-vip-btn-start" class="btn btn-dark prv-btn-start"><span class="page-title prv-btn-start-lbl">CAR</span></button>
                               </div>
                             </div>
                           </div>
                           <div class="prv-btn-mid-grp">
                             <div class="mt-3">
                               <div class="btn-border-mid text-center" id="btn-vip-border-mid">
-                                <button onclick="engineOemPreview()" id="prv-vip-btn-mid" class="btn btn-primary prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
+                                <button onclick="engineOemPreview()" id="prv-vip-btn-mid" class="btn btn-dark prv-btn-mid"><span class="page-title prv-btn-mid-lbl">Engine</span></button>
                               </div>
                             </div>
                           </div>
                           <div class="prv-btn-end-grp">
                             <div class="mt-3">
                               <div class="btn-border-end text-center" id="btn-vip-border-end">
-                                <button onclick="wheelOemPreview()" id="prv-vip-btn-end" class="btn btn-primary prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
+                                <button onclick="wheelOemPreview()" id="prv-vip-btn-end" class="btn btn-dark prv-btn-end"><span class="page-title prv-btn-end-lbl">Wheels</span></button>
                               </div>
                             </div>
                           </div>
