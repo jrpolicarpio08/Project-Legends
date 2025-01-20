@@ -64,7 +64,7 @@
     <section id="2nd" class="main-page">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-5 .d-sm-none .d-md-block factory-car-img">
+          <div class="col-5 .d-sm-none factory-car-img">
 
           </div>
           <div class="col-sm-12 col-md-7 col-lg-7 right-side">
@@ -78,6 +78,99 @@
 
     <section id="3rd" class="third-page">
       <div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators mb-3">
+            <button type="button" id="build-btn-drift" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active build-btn" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" id="build-btn-track" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" id="build-btn-oem" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="" style="height: 100vh;">
+                <div class="row">
+
+                  <div class="col-xxl-3 col-lg-4 left-side pt-3 px-5" style="background-color: black;">
+                    <div class="text-center text-white page-title build mb-3">Builds</div>
+                    <div class="spec-sheet px-4 pt-2 text-white">
+                      <div class="build-title text-center page-title mt-2">Drift</div>
+
+                      <div class="d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                        <div class="engine-info text-white main-page-subtitle"> 
+                          <div>: 500HP 2JZ-GE</div>
+                        </div>
+                      </div>
+
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                        <div class="suspension-info text-white main-page-subtitle"> 
+                          <div>: BCR ZR-FL-CRNR </div>
+                        </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                        <div class="brakes-info text-white main-page-subtitle"> 
+                          <div>: BREMBO BBK  </div>
+                        </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                        <div class="wheels-info text-white main-page-subtitle"> 
+                          <div>: ENKEI PF01 </div>
+                        </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                        <div class="tires-info text-white main-page-subtitle"> 
+                          <div>: TOYO 88RS </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col container p-0" style="background-color: black;">
+                    <div class="btn-prvw-grp">
+                      <div>
+                        <button id="prevBtn" class="btn"><i class="fa-solid fa-location-arrow nxt-btn"></i></button>
+                      </div>
+                      <div>
+                        <button id="nextBtn" class="btn"><i class="fa-solid fa-location-arrow prv-btn"></i></button>
+                      </div>
+                    </div>
+      
+                    <div class="image-container">
+                      <img id="img1" src="./assets/img/chaser-track.png" alt="Image 1" class="active">
+                      <img id="img2" src="./assets/img/chaser-track-wheel.png" alt="Image 2">
+                      <img id="img3" src="./assets/img/chaser-track-engine.png" alt="Image 3">
+                      <img id="img4" src="./assets/img/chaser-factory.png" alt="Image 4">
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="" style="height: 100vh;background-color: red;">
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="" style="height: 100vh;background-color: red;">
+
+              </div>
+            </div>
+          </div>
+          <!-- <button style="width: 50px;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button style="width: 50px;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button> -->
+        </div>
+      </div>
+      <!-- <div>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-inner">
 
@@ -321,11 +414,56 @@
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           </button>
         </div>
-      </div>
+      </div> -->
     </section>
-    
-    <script src="js/chaser-prv-btn-effect.js" defer></script>
-    <script src="js/chaser-bg-changer.js" defer></script>
+    <script>
+      const images = [
+          document.getElementById('img1'),
+          document.getElementById('img2'),
+          document.getElementById('img3'),
+          // document.getElementById('img4')
+      ];
+
+      let currentIndex = 1;
+
+      function updateImages(direction) {
+          const outgoingImage = images[currentIndex];
+
+          // Determine the next index based on direction
+          if (direction === 'next') {
+              currentIndex = (currentIndex + 1) % images.length;
+          } else {
+              currentIndex = (currentIndex - 1 + images.length) % images.length;
+          }
+
+          const incomingImage = images[currentIndex];
+
+          // Reset all images
+          images.forEach((img) => {
+              img.classList.remove('active', 'prev', 'next');
+          });
+
+          // Set the appropriate classes for outgoing and incoming images
+          outgoingImage.classList.add(direction === 'next' ? 'next' : 'prev');
+          incomingImage.classList.add('active');
+
+          // Ensure outgoing image resets after the animation
+          setTimeout(() => {
+              outgoingImage.classList.remove('prev', 'next');
+          }, 500); // Match the animation duration
+      }
+
+      document.getElementById('prevBtn').addEventListener('click', () => {
+          updateImages('prev');
+      });
+
+      document.getElementById('nextBtn').addEventListener('click', () => {
+          updateImages('next');
+      });
+
+      // Initialize by displaying the first image
+      updateImages();
+  </script>
     <script src="js/navlink-change-color-chaser.js" defer></script>
 
   </body>

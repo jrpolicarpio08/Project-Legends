@@ -10,6 +10,7 @@ html {
   color: inherit;
 } 
 .main-page,
+.third-page,
 .left-side,
 .factory-car-img{
   height: 100vh;
@@ -41,7 +42,6 @@ html {
   left: 50%;
   transform: translate(-50% );
 }
-
 .collage-pillar{
   display: inline-block;
   position: relative;
@@ -82,7 +82,127 @@ html {
 #blinking-button {
   animation: blink 2s linear infinite;
 }
-#chaser-drift,
+.svg-white{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.btn-prv-img-grp{
+  position: absolute;
+  display: block;
+
+}
+.prv-btn-nxt{
+  font-size: 50px;
+  color: white;
+  rotate: -44deg;
+}
+.prv-btn-bck{
+  font-size: 50px;
+  color: white;
+  rotate: 135deg;
+}
+.prv-btn-bck:hover{
+  color: red;
+  transition: 0.5s;
+}
+.prv-btn-nxt:hover{
+  color: red;
+  transition: 0.5s;
+}
+.chaser-track-wheel,
+.chaser-track{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-container {
+  height: 100vh;
+  position: relative;
+}
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+.image-container img.active {
+  top: 0;
+  animation-name: fadeInTop;
+  opacity: 1;
+}
+.image-container img.prev {
+  top: -100%;
+  animation-name: fadeOutBottom;
+}
+.image-container img.next {
+  top: 100%;
+  animation-name: fadeOutTop;
+}
+.btn-prvw-grp{
+  position: absolute;
+  z-index: 10;
+  margin-top: 35vh;
+  right: 20px;
+}
+.nxt-btn{
+  color: white;
+  font-size: 50px;
+  rotate: -45deg;
+}
+.prv-btn{
+  color: white;
+  font-size: 50px;
+  rotate: 135deg;
+}
+.prv-btn:hover,
+.nxt-btn:hover{
+  color: red;
+  transition: 0.5s;
+}
+.build{
+  font-size: 50px;
+}
+.build-title{
+  font-size: 30px;
+}
+.spec-sheet{
+  height: 77vh;
+  border: 2px solid #fff;
+}
+#build-btn-drift,
+#build-btn-track,
+#build-btn-oem{
+  width: 50px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid white;
+}
+#build-btn-drift{
+  background-image: url(../assets/img/chaser-drift.png);
+}
+#build-btn-track{
+  background-image: url(../assets/img/chaser-track.png);
+}
+#build-btn-oem{
+  background-image: url(../assets/img/chaser-oem.png);
+}
+.engine-info,
+.suspension-info,
+.brakes-info,
+.wheels-info,
+.tires-info{
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+/* #chaser-drift,
 .chaser-drift {
   background-image: url(../assets/img/chaser-drift.png);
   background-position: center;
@@ -111,12 +231,9 @@ html {
   height: 75vh;
   width: 100%;
   border: 2px solid #fff;
-}
-.svg-white{
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-.engine-info,
+} */
+
+/* .engine-info,
 .suspension-info,
 .brakes-info,
 .wheels-info,
@@ -179,7 +296,7 @@ html {
 }
 .build-variant{
   font-size: 30px;
-}
+} */
 @media only screen and (min-width: 1440px) { 
 
   .nav-link{
@@ -215,24 +332,10 @@ html {
   .car-description{
     font-size: 30px;
   }
-  .spec-icon{
-    margin-top: 20px;
-    height: 125px;
-    width: 125px;
-  }
   .builds{
     font-size: 50px;
   }
   .build-variant{
     font-size: 40px;
-  }
-  .engine-info,
-  .suspension-info,
-  .brakes-info,
-  .wheels-info,
-  .tires-info{
-    margin-left: 20px;
-    margin-top: 50px;
-    font-size: 45px;
   }
  }

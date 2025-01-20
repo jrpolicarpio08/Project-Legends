@@ -125,4 +125,36 @@
     -webkit-transform: none;
     transform: none;
     }
-  }  
+  } 
+  
+  @keyframes fadeInTop {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeOutTop {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        top: -100%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutBottom {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
