@@ -76,7 +76,7 @@ html {
   position: absolute;
   height: 300px;
   left: 25%;
-  top: 40vh;
+  top: 40%;
   transform: translate(-25%);
 }
 #blinking-button {
@@ -219,8 +219,8 @@ html {
 @media screen and (min-width: 1280px) { 
 
   .car-model{
-    top: 42vh;
     left: 23%;
+    top: 41%;
     transform: translate(-30%);
   }
   .car-description4{
@@ -231,8 +231,8 @@ html {
 
 @media screen and (min-width: 1366px) { 
   .car-model{
-    top: 40vh;
     left: 25%;
+    top: 40%;
     transform: translate(-30%);
   }
 
@@ -244,8 +244,8 @@ html {
 
 @media screen and (min-width: 1440px) { 
   .car-model{
-    top: 47vh;
     left: 26%;
+    top: 48%;
     transform: translate(-30%);
   }
 
@@ -257,8 +257,8 @@ html {
 @media screen and (min-width: 1920px) { 
 
   .car-model{
-    top: 52vh;
     left: 32%;
+    top: 52%;
     transform: translate(-30%);
   }
   .car-description1,
@@ -286,8 +286,8 @@ html {
   }
   .car-model{
     height: 600px;
-    top: 39vh;
     left: 30%;
+    top: 38%;
     transform: translate(-30%);
   }
   .car-name{
