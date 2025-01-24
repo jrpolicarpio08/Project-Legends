@@ -125,7 +125,12 @@
     -webkit-transform: none;
     transform: none;
     }
-  } 
+  }
+  
+  @keyframes blink {
+    0%, 100% {opacity: };
+    50% {opacity: 0};
+  }
   
   @keyframes fadeInTop {
     from {

@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/ethnocentric');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,7 +12,7 @@ html {
 } 
 .main-page,
 .third-page,
-.left-side,
+.mobile-third-page,
 .factory-car-img{
   height: 100vh;
 }
@@ -21,10 +22,13 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.mobile-factory-car-img{
+  height: 61vh;
+}
+.left-side,
 .right-side{
   background: black;
   height: 100vh;
-  padding: 30px;
 }
 .page-title{
   font-family: 'Ethnocentric Rg';
@@ -75,10 +79,6 @@ html {
   top: 40vh;
   transform: translate(-25%);
 }
-@keyframes blink {
-  0%, 100% {opacity: };
-  50% {opacity: 0};
-}
 #blinking-button {
   animation: blink 2s linear infinite;
 }
@@ -89,7 +89,6 @@ html {
 .btn-prv-img-grp{
   position: absolute;
   display: block;
-
 }
 .prv-btn-nxt{
   font-size: 50px;
@@ -143,6 +142,12 @@ html {
   top: 100%;
   animation-name: fadeOutTop;
 }
+#mobile-prv-btn{
+  height: 20px;
+  position: absolute;
+  top: auto;
+  bottom: 13%;
+}
 .btn-prvw-grp{
   position: absolute;
   z-index: 10;
@@ -150,12 +155,10 @@ html {
   right: 20px;
 }
 .nxt-btn{
-  color: white;
   font-size: 50px;
   rotate: -45deg;
 }
 .prv-btn{
-  color: white;
   font-size: 50px;
   rotate: 135deg;
 }
@@ -170,7 +173,11 @@ html {
 .build-title{
   font-size: 30px;
 }
+.spec-sheet-mobile{
+  background-color: #000
+}
 .spec-sheet{
+  background-color: #000;
   height: 77vh;
   border: 2px solid #fff;
 }
@@ -202,102 +209,69 @@ html {
   margin-top: 15px;
   font-size: 20px;
 }
-/* #chaser-drift,
-.chaser-drift {
-  background-image: url(../assets/img/chaser-drift.png);
+.mobile-chaser-drift-btn{
+  height: 24vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 0px;
 }
-#chaser-track,
-.chaser-track{
-  background-image: url(../assets/img/chaser-track.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 0px;
-}
-#chaser-oem,
-.chaser-oem{
-  background-image: url(../assets/img/chaser-oem.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 0px;
-}
-.specs-sheet{
-  display: inline-block;
-  height: 75vh;
-  width: 100%;
-  border: 2px solid #fff;
-} */
 
-/* .engine-info,
-.suspension-info,
-.brakes-info,
-.wheels-info,
-.tires-info{
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 20px;
+@media screen and (min-width: 1280px) { 
+
+  .car-model{
+    top: 42vh;
+    left: 23%;
+    transform: translate(-30%);
+  }
+  .car-description4{
+    display: none;
+  }
+
 }
-.btn-border-start{
-  background: black;
-  position: relative;
-  height: 50px;
-  width: 150px;
-  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+@media screen and (min-width: 1366px) { 
+  .car-model{
+    top: 40vh;
+    left: 25%;
+    transform: translate(-30%);
+  }
+
+  .car-description4{
+    display: none;
+  }
+
 }
-.prv-btn-end-grp,
-.prv-btn-mid-grp{
-  margin-left: -30px;
+
+@media screen and (min-width: 1440px) { 
+  .car-model{
+    top: 47vh;
+    left: 26%;
+    transform: translate(-30%);
+  }
+
+  .car-description4{
+    display: block;
+  }
 }
-.btn-border-mid{
-  background: black;
-  position: relative;
-  height: 50px;
-  width: 150px;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+@media screen and (min-width: 1920px) { 
+
+  .car-model{
+    top: 52vh;
+    left: 32%;
+    transform: translate(-30%);
+  }
+  .car-description1,
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    font-size: 22px;
+    display: block;
+  }
+  
 }
-.btn-border-end{
-  background: black;
-  position: relative;
-  height: 50px;
-  width: 150px;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-.prv-btn-start{
-  margin-top: 5px;
-  width: 140px;
-  clip-path: polygon(0% 0%, 97% 0%, 75% 100%, 0% 100%);
-  border-radius: 0px;
-}
-.prv-btn-mid{
-  margin-top: 5px;
-  width: 140px;
-  clip-path: polygon(26% 0%, 96% 0%, 75% 100%, 6% 100%);
-  border-radius: 0px;
-}
-.prv-btn-end{
-  margin-top: 5px;
-  width: 140px;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 5% 100%);
-  border-radius: 0px;
-}
-.prv-btn-start-lbl{
-  margin-left: -19px;
-}
-.prv-btn-end-lbl{
-  margin-right: -26px;
-}
-.builds{
-  font-size: 35px;
-}
-.build-variant{
-  font-size: 30px;
-} */
-@media only screen and (min-width: 1440px) { 
+
+@media screen and (min-width: 3440px) { 
 
   .nav-link{
     font-size: 30px;
@@ -310,14 +284,12 @@ html {
     margin-left: 40px;
     margin-right: 40px;
   }
-
   .car-model{
     height: 600px;
     top: 39vh;
     left: 30%;
     transform: translate(-30%);
   }
-
   .car-name{
     margin-top: 60px;
     font-size: 35px;
@@ -329,8 +301,12 @@ html {
     font-size: 70px;
     margin-top: 100px;
   }
-  .car-description{
+  .car-description1,
+  .car-description2,
+  .car-description3,
+  .car-description4{
     font-size: 30px;
+    display: block;
   }
   .builds{
     font-size: 50px;
