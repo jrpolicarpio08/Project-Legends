@@ -72,13 +72,18 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.car-model{
-  position: absolute;
-  height: 300px;
-  left: 25%;
-  top: 40%;
-  transform: translate(-25%);
+.car-model-container{
+  height: 250px;
+  margin: auto;
+  width: 100%;
+  margin-top: -18%;
 }
+.car-model{
+  height: 300px;
+  /* left: 25%;
+  top: 40%;
+  transform: translate(-25%); */
+} */
 #blinking-button {
   animation: blink 2s linear infinite;
 }
@@ -216,7 +221,7 @@ html {
   background-size: cover;
 }
 
-@media screen and (min-width: 1280px) { 
+/* @media screen and (min-width: 1280px) { 
 
   .car-model{
     left: 23%;
@@ -240,25 +245,19 @@ html {
     display: none;
   }
 
-}
+} */
 
 @media screen and (min-width: 1440px) { 
-  .car-model{
-    left: 26%;
-    top: 48%;
-    transform: translate(-30%);
-  }
-
   .car-description4{
     display: block;
   }
 }
 
-@media screen and (min-width: 1920px) { 
+/* @media screen and (min-width: 1920px) { 
 
   .car-model{
-    left: 32%;
-    top: 52%;
+    margin: auto;
+    width: 50%;
     transform: translate(-30%);
   }
   .car-description1,
@@ -314,4 +313,4 @@ html {
   .build-variant{
     font-size: 40px;
   }
- }
+ } */
