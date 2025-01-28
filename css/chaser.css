@@ -76,14 +76,11 @@ html {
   height: 250px;
   margin: auto;
   width: 100%;
-  margin-top: -18%;
+  margin-top: -22.5%;
 }
 .car-model{
   height: 300px;
-  /* left: 25%;
-  top: 40%;
-  transform: translate(-25%); */
-} */
+}
 #blinking-button {
   animation: blink 2s linear infinite;
 }
@@ -178,8 +175,14 @@ html {
 .build-title{
   font-size: 30px;
 }
-.spec-sheet-mobile{
-  background-color: #000
+.mobile-spec-sheet{
+  background-color: #000;
+  height: 40vh;
+}
+.mobile-spec-sheet-info{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .spec-sheet{
   background-color: #000;
@@ -214,47 +217,137 @@ html {
   margin-top: 15px;
   font-size: 20px;
 }
+.mobile-engine-info,
+.mobile-suspension-info,
+.mobile-brakes-info,
+.mobile-wheels-info,
+.mobile-tires-info{
+  margin-left: 5px;
+  margin-top: 6px;
+  font-size: 15px;
+}
+.modal-close-btn{
+  color: white !important;
+}
+.mobile-chaser-oem-btn,
 .mobile-chaser-drift-btn{
   height: 24vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* @media screen and (min-width: 1280px) { 
-
-  .car-model{
-    left: 23%;
-    top: 41%;
-    transform: translate(-30%);
+.modal-content{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+.modal-img-drift{
+  background-image: url(../assets/img/mobile-chaser-drift.png);
+}
+.modal-img-drift-wheel{
+  background-image: url(../assets/img/mobile-chaser-drift-wheel.png);
+}
+.modal-img-drift-back{
+  background-image: url(../assets/img/mobile-chaser-drift-back.png);
+}
+.modal-img-track{
+  background-image: url(../assets/img/mobile-chaser-track.png);
+}
+.modal-img-track-wheel{
+  background-image: url(../assets/img/mobile-chaser-track-wheel.png);
+}
+.modal-img-track-back{
+  background-image: url(../assets/img/mobile-chaser-track-back.png);
+}
+.modal-img-oem{
+  background-image: url(../assets/img/mobile-chaser-oem.png);
+}
+.modal-img-oem-wheel{
+  background-image: url(../assets/img/mobile-chaser-oem-wheel.png);
+}
+.modal-img-oem-back{
+  background-image: url(../assets/img/mobile-chaser-oem-back.png);
+}
+@media screen and (min-width: 360px) and (max-width: 1279px) { 
+  .collage-pillar{
+    width: 6vh;
+    height: 60vh;
+    margin-top: 40px;
   }
+  .car-model-container{
+    height: 5px;
+    margin: auto;
+  }
+  .car-model{
+    width: 360px;
+    height: 250px;
+    margin-top: -60%;
+  }
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1279px) { 
+  .collage-pillar{
+    width: 7vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    height: 5px;
+    margin: auto;
+  }
+  .car-model{
+    width: 100%;
+    height: 250px;
+    margin-top: -60%;
+  }
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 1279px) { 
+  .collage-pillar{
+    width: 7vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    height: 5px;
+    margin: auto;
+  }
+  .car-model{
+    width: 100%;
+    height: 250px;
+    margin-top: -55%;
+  }
+  .car-description2{
+    display: block;
+  }
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 1366px) { 
   .car-description4{
     display: none;
   }
 
 }
-
-@media screen and (min-width: 1366px) { 
-  .car-model{
-    left: 25%;
-    top: 40%;
-    transform: translate(-30%);
-  }
-
-  .car-description4{
-    display: none;
-  }
-
-} */
-
 @media screen and (min-width: 1440px) { 
+  .car-model-container{
+    margin-top: -18%;
+  }
   .car-description4{
     display: block;
   }
 }
-
-/* @media screen and (min-width: 1920px) { 
-
+@media screen and (min-width: 1920px) { 
   .car-model{
     margin: auto;
     width: 50%;
@@ -267,7 +360,6 @@ html {
     font-size: 22px;
     display: block;
   }
-  
 }
 
 @media screen and (min-width: 3440px) { 
@@ -313,4 +405,4 @@ html {
   .build-variant{
     font-size: 40px;
   }
- } */
+ }
