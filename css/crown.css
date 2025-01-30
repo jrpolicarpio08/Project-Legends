@@ -1,0 +1,449 @@
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-link{
+  font-family: 'Ethnocentric Rg';
+}
+.nav-link:hover{
+  color: inherit;
+} 
+.main-page,
+.third-page,
+.mobile-third-page,
+.factory-car-img{
+  height: 100vh;
+}
+.factory-car-img{
+  background-image: url(../assets/img/crown-factory.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-side,
+.right-side{
+  background: black;
+  height: 100vh;
+}
+.page-title{
+  font-family: 'Ethnocentric Rg';
+}
+.main-page-subtitle{
+  font-family: "Orbitron", sans-serif;
+}
+.carousel-img{
+  position: relative;
+  height: 100vh;
+}
+.tpage-title{
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50% );
+}
+.pillar-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pillar{
+  width: 100px;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pillar-left{
+  background-image: url(../assets/img/chaser-pillar1.png);
+}
+.pillar-center{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url(../assets/img/chaser-pillar2.png);
+}
+.pillar-right{
+  background-image: url(../assets/img/chaser-pillar3.png);
+}
+.car-model-container{
+  overflow: hidden;
+  left: auto;
+  margin-top: -18%;
+  margin-bottom: -3%;
+}
+.car-model{
+  height: 300px;
+}
+#blinking-button {
+  animation: blink 2s linear infinite;
+}
+.svg-white{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.btn-prv-img-grp{
+  position: absolute;
+  display: block;
+}
+.prv-btn-nxt{
+  font-size: 50px;
+  color: white;
+  rotate: -44deg;
+}
+.prv-btn-bck{
+  font-size: 50px;
+  color: white;
+  rotate: 135deg;
+}
+.prv-btn-bck:hover{
+  color: red;
+  transition: 0.5s;
+}
+.prv-btn-nxt:hover{
+  color: red;
+  transition: 0.5s;
+}
+.chaser-track-wheel,
+.chaser-track{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-container {
+  height: 100vh;
+  position: relative;
+}
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+.image-container img.active {
+  top: 0;
+  animation-name: fadeInTop;
+  opacity: 1;
+}
+.image-container img.prev {
+  top: -100%;
+  animation-name: fadeOutBottom;
+}
+.image-container img.next {
+  top: 100%;
+  animation-name: fadeOutTop;
+}
+#mobile-prv-btn{
+  height: 20px;
+  position: absolute;
+  top: auto;
+  bottom: 13%;
+}
+.btn-prvw-grp{
+  position: absolute;
+  z-index: 10;
+  margin-top: 35vh;
+  right: 20px;
+}
+.nxt-btn{
+  font-size: 50px;
+  rotate: -45deg;
+}
+.prv-btn{
+  font-size: 50px;
+  rotate: 135deg;
+}
+.prv-btn:hover,
+.nxt-btn:hover{
+  color: red;
+  transition: 0.5s;
+}
+.build{
+  font-size: 50px;
+}
+.build-title{
+  font-size: 30px;
+}
+.mobile-spec-sheet{
+  background-color: #000;
+  height: 40vh;
+}
+.mobile-spec-sheet-info{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spec-sheet{
+  background-color: #000;
+  height: 77vh;
+  border: 2px solid #fff;
+}
+#build-btn-drift,
+#build-btn-track,
+#build-btn-oem{
+  width: 50px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid white;
+}
+#build-btn-drift{
+  background-image: url(../assets/img/chaser-drift.png);
+}
+#build-btn-track{
+  background-image: url(../assets/img/chaser-track.png);
+}
+#build-btn-oem{
+  background-image: url(../assets/img/chaser-oem.png);
+}
+.engine-info,
+.suspension-info,
+.brakes-info,
+.wheels-info,
+.tires-info{
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.mobile-engine-info,
+.mobile-suspension-info,
+.mobile-brakes-info,
+.mobile-wheels-info,
+.mobile-tires-info{
+  margin-left: 5px;
+  margin-top: 6px;
+  font-size: 15px;
+}
+.modal-close-btn{
+  color: white !important;
+}
+.mobile-crown-euro-btn,
+.mobile-chaser-drift-btn{
+  height: 24vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-content{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+.modal-img-drift{
+  background-image: url(../assets/img/mobile-crown-euro.png);
+}
+.modal-img-drift-wheel{
+  background-image: url(../assets/img/mobile-crown-euro-wheel.png);
+}
+.modal-img-drift-back{
+  background-image: url(../assets/img/mobile-crown-euro-back.png);
+}
+.modal-img-track{
+  background-image: url(../assets/img/mobile-chaser-track.png);
+}
+.modal-img-track-wheel{
+  background-image: url(../assets/img/mobile-chaser-track-wheel.png);
+}
+.modal-img-track-back{
+  background-image: url(../assets/img/mobile-chaser-track-back.png);
+}
+.modal-img-oem{
+  background-image: url(../assets/img/mobile-chaser-oem.png);
+}
+.modal-img-oem-wheel{
+  background-image: url(../assets/img/mobile-chaser-oem-wheel.png);
+}
+.modal-img-oem-back{
+  background-image: url(../assets/img/mobile-chaser-oem-back.png);
+}
+@media screen and (min-width: 360px) and (max-width: 1279px) { 
+  .pillar{
+    width: 6vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    margin-top: -44%;
+  }
+  .car-model{
+    height: 180px;
+    margin-left: -11%;
+  }
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1279px) { 
+  .pillar{
+    width: 7vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    margin-top: -40%;
+  }
+  .car-model{
+    height: 180px;
+    margin-left: -8%;
+  }
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 1279px) { 
+  .pillar{
+    width: 7vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-description2{
+    display: block;
+  }
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 1279px) { 
+  .pillar{
+    width: 7vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    margin-top: -39%;
+  }
+  .car-model{
+    height: 205.5px;
+    margin-left: -10%;
+  }
+  .car-description2{
+    display: block;
+  }
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 1366px) { 
+  .car-model-container{
+    margin-bottom: -2%;
+  }
+  .car-description4{
+    display: none;
+  }
+
+}
+@media screen and (min-width: 1440px) { 
+  .car-model-container{
+    margin-top: -23%;
+    margin-bottom: -3%;
+  }
+  .car-model{
+    height: 400px;
+    margin-left: 2%;
+  }
+  .car-description4{
+    display: block;
+  }
+}
+@media screen and (min-width: 1536px) { 
+  .car-model-container{
+    margin-top: -20%;
+    margin-bottom: -3%;
+  }
+  .car-description4{
+    display: block;
+  }
+}
+@media screen and (min-width: 1920px) { 
+  .car-model-container{
+    margin-top: -22%;
+    margin-bottom: -3%;
+  }
+  .car-model{
+    height: 500px;
+  }
+  .car-description1,
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    font-size: 22px;
+    display: block;
+  }
+}
+@media screen and (min-width: 2560px) { 
+  .nav-link{
+    font-size: 30px;
+  }
+  .pillar{
+    width: 10vh;
+    height: 75vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    margin-top: -19%;
+    margin-bottom: -3%;
+  }
+  .car-model{
+    height: 600px;
+  }
+  .car-name{
+    font-size: 50px;
+  }
+  .car-specs{
+    font-size: 30px;
+  }
+  #blinking-button{
+    font-size: 30px;
+  }
+  .car-name-title{
+    font-size: 60px;
+  }
+  .car-description1,
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    font-size: 30px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 3440px) { 
+  .pillar{
+    width: 10vh;
+    height: 75vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    margin-top: -14%;
+    margin-bottom: -2.2%;
+  }
+  .nav-link{
+    font-size: 30px;
+  }
+  .car-description1,
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    font-size: 30px;
+    display: block;
+  }
+  .builds{
+    font-size: 50px;
+  }
+  .build-variant{
+    font-size: 40px;
+  }
+ }

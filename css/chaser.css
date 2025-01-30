@@ -22,9 +22,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mobile-factory-car-img{
-  height: 61vh;
-}
 .left-side,
 .right-side{
   background: black;
@@ -46,37 +43,35 @@ html {
   left: 50%;
   transform: translate(-50% );
 }
-.collage-pillar{
-  display: inline-block;
+.pillar-container{
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pillar{
   width: 100px;
   height: 70vh;
-}
-.pillar-left{
-  background-image: url(../assets/img/chaser-pillar1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.pillar-left{
+  background-image: url(../assets/img/chaser-pillar1.png);
 }
 .pillar-center{
   margin-left: 20px;
   margin-right: 20px;
   background-image: url(../assets/img/chaser-pillar2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .pillar-right{
   background-image: url(../assets/img/chaser-pillar3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .car-model-container{
-  height: 250px;
-  margin: auto;
-  width: 100%;
-  margin-top: -22.5%;
+  overflow: hidden;
+  left: auto;
+  margin-top: -18%;
+  margin-bottom: -3%;
 }
 .car-model{
   height: 300px;
@@ -270,19 +265,17 @@ html {
   background-image: url(../assets/img/mobile-chaser-oem-back.png);
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
-  .collage-pillar{
+  .pillar{
     width: 6vh;
     height: 60vh;
     margin-top: 40px;
   }
   .car-model-container{
-    height: 5px;
-    margin: auto;
+    margin-top: -45%;
   }
   .car-model{
-    width: 360px;
-    height: 250px;
-    margin-top: -60%;
+    height: 180px;
+    margin-left: -9%;
   }
   .car-description3,
   .car-description4{
@@ -290,19 +283,17 @@ html {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 1279px) { 
-  .collage-pillar{
+  .pillar{
     width: 7vh;
     height: 60vh;
     margin-top: 40px;
   }
   .car-model-container{
-    height: 5px;
-    margin: auto;
+    margin-top: -40%;
   }
   .car-model{
-    width: 100%;
-    height: 250px;
-    margin-top: -60%;
+    height: 180px;
+    margin-left: -8%;
   }
   .car-description2,
   .car-description3,
@@ -311,19 +302,31 @@ html {
   }
 }
 @media screen and (min-width: 390px) and (max-width: 1279px) { 
-  .collage-pillar{
+  .pillar{
+    width: 7vh;
+    height: 60vh;
+    margin-top: 40px;
+  }
+  .car-description2{
+    display: block;
+  }
+  .car-description3,
+  .car-description4{
+    display: none;
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 1279px) { 
+  .pillar{
     width: 7vh;
     height: 60vh;
     margin-top: 40px;
   }
   .car-model-container{
-    height: 5px;
-    margin: auto;
+    margin-top: -39%;
   }
   .car-model{
-    width: 100%;
-    height: 250px;
-    margin-top: -55%;
+    height: 205.5px;
+    margin-left: -10%;
   }
   .car-description2{
     display: block;
@@ -334,6 +337,9 @@ html {
   }
 }
 @media screen and (min-width: 1366px) { 
+  .car-model-container{
+    margin-bottom: -2%;
+  }
   .car-description4{
     display: none;
   }
@@ -341,17 +347,33 @@ html {
 }
 @media screen and (min-width: 1440px) { 
   .car-model-container{
-    margin-top: -18%;
+    margin-top: -23%;
+    margin-bottom: -3%;
+  }
+  .car-model{
+    height: 400px;
+    margin-left: 2%;
+  }
+  .car-description4{
+    display: block;
+  }
+}
+@media screen and (min-width: 1536px) { 
+  .car-model-container{
+    margin-top: -20%;
+    margin-bottom: -3%;
   }
   .car-description4{
     display: block;
   }
 }
 @media screen and (min-width: 1920px) { 
+  .car-model-container{
+    margin-top: -22%;
+    margin-bottom: -3%;
+  }
   .car-model{
-    margin: auto;
-    width: 50%;
-    transform: translate(-30%);
+    height: 500px;
   }
   .car-description1,
   .car-description2,
@@ -361,36 +383,55 @@ html {
     display: block;
   }
 }
-
-@media screen and (min-width: 3440px) { 
-
+@media screen and (min-width: 2560px) { 
   .nav-link{
     font-size: 30px;
   }
-
-  .collage-pillar{
-    width: 150px;
+  .pillar{
+    width: 10vh;
+    height: 75vh;
+    margin-top: 40px;
   }
-  .pillar-center{
-    margin-left: 40px;
-    margin-right: 40px;
+  .car-model-container{
+    margin-top: -19%;
+    margin-bottom: -3%;
   }
   .car-model{
     height: 600px;
-    left: 30%;
-    top: 38%;
-    transform: translate(-30%);
   }
   .car-name{
-    margin-top: 60px;
-    font-size: 35px;
+    font-size: 50px;
   }
   .car-specs{
-    font-size: 25px;
+    font-size: 30px;
+  }
+  #blinking-button{
+    font-size: 30px;
   }
   .car-name-title{
-    font-size: 70px;
-    margin-top: 100px;
+    font-size: 60px;
+  }
+  .car-description1,
+  .car-description2,
+  .car-description3,
+  .car-description4{
+    font-size: 30px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 3440px) { 
+  .pillar{
+    width: 10vh;
+    height: 75vh;
+    margin-top: 40px;
+  }
+  .car-model-container{
+    margin-top: -14%;
+    margin-bottom: -2.2%;
+  }
+  .nav-link{
+    font-size: 30px;
   }
   .car-description1,
   .car-description2,

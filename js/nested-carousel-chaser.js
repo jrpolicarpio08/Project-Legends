@@ -40,3 +40,4 @@ function initializeImageCarousel(carouselId, imagesIds, prevBtnId, nextBtnId) {
 initializeImageCarousel('drift', ['driftimg1', 'driftimg2', 'driftimg3'], 'driftprevBtn', 'driftnextBtn');
 initializeImageCarousel('track', ['trackimg1', 'trackimg2', 'trackimg3'], 'trackprevBtn', 'tracknextBtn');
 initializeImageCarousel('oem',   ['oemimg1', 'oemimg2', 'oemimg3'], 'oemprevBtn', 'oemnextBtn');
+
