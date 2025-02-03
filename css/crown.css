@@ -57,15 +57,15 @@ html {
   background-size: cover;
 }
 .pillar-left{
-  background-image: url(../assets/img/chaser-pillar1.png);
+  background-image: url(../assets/img/crown-pillar1.png);
 }
 .pillar-center{
   margin-left: 20px;
   margin-right: 20px;
-  background-image: url(../assets/img/chaser-pillar2.png);
+  background-image: url(../assets/img/crown-pillar2.png);
 }
 .pillar-right{
-  background-image: url(../assets/img/chaser-pillar3.png);
+  background-image: url(../assets/img/crown-pillar3.png);
 }
 .car-model-container{
   overflow: hidden;
@@ -184,7 +184,7 @@ html {
   height: 77vh;
   border: 2px solid #fff;
 }
-#build-btn-drift,
+#build-btn-euro,
 #build-btn-track,
 #build-btn-oem{
   width: 50px;
@@ -194,14 +194,14 @@ html {
   background-size: cover;
   border: 2px solid white;
 }
-#build-btn-drift{
-  background-image: url(../assets/img/chaser-drift.png);
+#build-btn-euro{
+  background-image: url(../assets/img/crown-euro.png);
 }
 #build-btn-track{
-  background-image: url(../assets/img/chaser-track.png);
+  background-image: url(../assets/img/crown-demo.png);
 }
 #build-btn-oem{
-  background-image: url(../assets/img/chaser-oem.png);
+  background-image: url(../assets/img/crown-oem.png);
 }
 .engine-info,
 .suspension-info,
@@ -225,7 +225,8 @@ html {
   color: white !important;
 }
 .mobile-crown-euro-btn,
-.mobile-chaser-drift-btn{
+.mobile-crown-demo-btn,
+.mobile-crown-oem-btn{
   height: 24vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -246,23 +247,23 @@ html {
 .modal-img-drift-back{
   background-image: url(../assets/img/mobile-crown-euro-back.png);
 }
-.modal-img-track{
-  background-image: url(../assets/img/mobile-chaser-track.png);
+.modal-img-demo{
+  background-image: url(../assets/img/mobile-crown-demo.png);
 }
-.modal-img-track-wheel{
-  background-image: url(../assets/img/mobile-chaser-track-wheel.png);
+.modal-img-demo-wheel{
+  background-image: url(../assets/img/mobile-crown-demo-wheel.png);
 }
-.modal-img-track-back{
-  background-image: url(../assets/img/mobile-chaser-track-back.png);
+.modal-img-demo-back{
+  background-image: url(../assets/img/mobile-crown-demo-back.png);
 }
 .modal-img-oem{
-  background-image: url(../assets/img/mobile-chaser-oem.png);
+  background-image: url(../assets/img/mobile-crown-oem.png);
 }
 .modal-img-oem-wheel{
-  background-image: url(../assets/img/mobile-chaser-oem-wheel.png);
+  background-image: url(../assets/img/mobile-crown-oem-wheel.png);
 }
 .modal-img-oem-back{
-  background-image: url(../assets/img/mobile-chaser-oem-back.png);
+  background-image: url(../assets/img/mobile-crown-oem-back.png);
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
   .pillar{

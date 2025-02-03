@@ -37,4 +37,6 @@ function initializeImageCarousel(carouselId, imagesIds, prevBtnId, nextBtnId) {
 }
 
 // Initialize carousels
+initializeImageCarousel('euro',   ['euroimg1', 'euroimg2', 'euroimg3'], 'europrevBtn', 'euronextBtn');
 initializeImageCarousel('demo',   ['demoimg1', 'demoimg2', 'demoimg3'], 'demoprevBtn', 'demonextBtn');
+initializeImageCarousel('oem',   ['oemimg1', 'oemimg2', 'oemimg3'], 'oemprevBtn', 'oemnextBtn');

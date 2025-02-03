@@ -25,8 +25,12 @@ html {
 .chaser{
   background-image: url(../assets/img/chaser.png);
 }
+.crown{
+  background-image: url(../assets/img/crown.png);
+}
 .chaser,
 .century,
+.crown,
 .right-side{
   background-position: center;
   background-repeat: no-repeat;
