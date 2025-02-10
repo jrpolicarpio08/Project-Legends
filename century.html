@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/century.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#1st">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#2nd">History</a>
+            </li>				
+            <li class="nav-item">
+              <a class="nav-link" href="#3rd">Builds</a>
+            </li>				
+          </ul>		  
+        </div>
+      </div>
+    </nav>
+
+    <section id="1st" class="main-page">
+      <div class="container-fluid">
+        <div class="pt-5 text-center">
+          
+          <div class="pillar-container">
+            <div class="pillar fadeInDownBigLeft pillar-left"></div>
+            <div class="pillar fadeInDownBigCenter pillar-center"></div>
+            <div class="pillar fadeInDownBigRight pillar-right"></div>
+          </div>
+
+          <div class="car-model-container">
+            <img class="car-model text-center fadeInLeft" src="./assets/img/century-model.png">
+          </div>
+
+          <h4 class="page-title car-name ">Century G60</h4>
+          <div class="main-page-subtitle car-specs">425HP - 2UR-FSE - HSD</div>
+
+          <a href="#2nd" class="nav-link pt-2" id="blinking-button"> <i class="fa-solid fa-arrow-down-long"></i> </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="2nd" class="main-page">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-5 d-none d-lg-block factory-car-img"></div>
+          <div class="col-sm-12 col-md-12 col-lg-7 right-side p-4">
+            <h4 class="text-white pt-5 page-title car-name-title">Toyota Century ( G60 )</h4>
+            <p class="main-page-subtitle text-white car-description1 pt-2"> The Toyota Century (Japanese: トヨタ・センチュリー, Hepburn: Toyota Senchurī) is a lineup of full-size luxury cars and limousines produced mainly for the Japanese market, serving as Toyota's flagship car within Japan; globally the unrelated Lexus LS series is Toyota's flagship luxury model. Production of the Century began in 1967, and the model received only minor changes until redesigns in 1997 and 2018. </p>
+            <p class="main-page-subtitle text-white car-description2 pt-2"> The Century derived its name from the 100th birthday of Sakichi Toyoda (born 14 February 1867), the founder of Toyota Industries. It is often used by the Imperial House of Japan, the Prime Minister of Japan, senior Japanese government leaders, and high-level executive businessmen.</p>
+            <p class="main-page-subtitle text-white car-description3 pt-2"> The Century is comparable in purpose to the Austin Princess/Daimler DS420, Cadillac Series 70, Mercedes-Maybach, Hongqi, Rolls-Royce Phantom, and Russian ZIS/ZIL limousines. </p>
+            <p class="main-page-subtitle text-white car-description4 pt-2"> While the Century is a premium, full-size luxury sedan, it is not available at Japanese Lexus dealerships; it can only be purchased at specifically identified Toyota Store locations. The gold phoenix logo used throughout is called the Hō'ō (鳳凰) or Fushichō (不死鳥) from Sinospheric mythology, representing the Imperial House of Japan, and the image can be found throughout Asia, such as the Kinkaku-ji in Kyoto. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile carousel -->
+    <section id="3rd" class="mobile-third-page d-sm-block d-lg-none">
+      <div class="d-sm-block d-lg-none">
+        <div id="carouselMobileIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row" style="height: 100vh;">
+                <div class="col-12" style="height: 70vh;">
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-cressida-fd"> <img class="mobile-crown-euro-btn" src="./assets/img/cresta-drag.png"> </a>
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-cressida-fd-wheel"> <img class="mobile-crown-euro-btn" src="./assets/img/cresta-drag-wheel.png"> </a>
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-cressida-fd-back"> <img class="mobile-crown-euro-btn" src="./assets/img/cresta-drag-back.png"> </a>
+                  
+                  <div class="modal fade" id="modal-cressida-fd" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-fd">
+                        <div>
+                          <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modal-cressida-fd-wheel" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-fd-wheel">
+                        <div class="modal-close-btn">
+                          <button style="float: right;" type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modal-cressida-fd-back" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-fd-back">
+                        <div>
+                          <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-12 text-white mobile-spec-sheet pt-3 px-1">
+                  <div class="text-center page-title">F-Drift</div>
+                  <div class="mobile-spec-sheet-info">
+                    <div class="d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                      <div class="mobile-engine-info text-white main-page-subtitle">: 1000HP 2JZ-GE</div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                      <div class="mobile-suspension-info text-white main-page-subtitle">: BCR ZR-FL-CRNR </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                      <div class="mobile-brakes-info text-white main-page-subtitle">: BREMBO BBK  </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                      <div class="mobile-wheels-info text-white main-page-subtitle">: KANSEI SEVEN </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                      <div class="mobile-tires-info text-white main-page-subtitle">: TOYO 88RS </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row" style="height: 100vh;">
+                <div class="col-12" style="height: 70vh;">
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-cressida-swap"> <img class="mobile-crown-demo-btn" src="./assets/img/cresta-vertex.png"> </a>
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-cressida-swap-wheel"> <img class="mobile-crown-demo-btn" src="./assets/img/cresta-vertex-wheel.png"> </a>
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-cressida-swap-back"> <img class="mobile-crown-demo-btn" src="./assets/img/cresta-vertex-back.png"> </a>
+                  
+                  <div class="modal fade" id="modal-cressida-swap" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-swap">
+                        <div>
+                          <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modal-cressida-swap-wheel" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-swap-wheel">
+                        <div class="modal-close-btn">
+                          <button style="float: right;" type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modal-cressida-swap-back" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-swap-back">
+                        <div>
+                          <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-12 text-white text-center mobile-spec-sheet pt-3" style="height: 40vh;">
+                  <div class="page-title">Swap</div>
+                  <div class="mobile-spec-sheet-info">
+                    <div class="d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                      <div class="mobile-engine-info text-white main-page-subtitle">: 700HP 2JZ-GE</div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                      <div class="mobile-suspension-info text-white main-page-subtitle">: DYNAMIC PTS </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                      <div class="mobile-brakes-info text-white main-page-subtitle">: D2 RACING BBK  </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                      <div class="mobile-wheels-info text-white main-page-subtitle">: BBS EVO MR </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                      <div class="mobile-tires-info text-white main-page-subtitle">: Federal 595 RS-RR </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row" style="height: 100vh;">
+                <div class="col-12" style="height: 70vh;">
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-crown-oem"> <img class="mobile-crown-oem-btn" src="./assets/img/cresta-oem.png"> </a>
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-crown-oem-wheel"> <img class="mobile-crown-oem-btn" src="./assets/img/cresta-oem-wheel.png"> </a>
+                  <a href="" data-bs-toggle="modal" data-bs-target="#modal-crown-oem-back"> <img class="mobile-crown-oem-btn" src="./assets/img/cresta-oem-back.png"> </a>
+                  
+                  <div class="modal fade" id="modal-crown-oem" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-oem">
+                        <div>
+                          <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modal-crown-oem-wheel" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-oem-wheel">
+                        <div class="modal-close-btn">
+                          <button style="float: right;" type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modal-crown-oem-back" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content modal-img-oem-back">
+                        <div>
+                          <button style="float: right;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-12 text-white text-center mobile-spec-sheet pt-3" style="height: 40vh;">
+                  <div class="page-title">OEM+</div>
+                  <div class="mobile-spec-sheet-info">
+                    <div class="d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                      <div class="mobile-engine-info text-white main-page-subtitle">: 400HP 2JZ-GE</div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                      <div class="mobile-suspension-info text-white main-page-subtitle">: TITAN SP-3 </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                      <div class="mobile-brakes-info text-white main-page-subtitle">: ALEKS RACING BBK  </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                      <div class="mobile-wheels-info text-white main-page-subtitle">: BBS EVO MR </div>
+                    </div>
+                    <div class="mt-2 d-flex">
+                      <img width="30" height="30" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                      <div class="mobile-tires-info text-white main-page-subtitle">: IMPERIAL Eco Sport 2 </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" id="mobile-prv-btn" type="button" data-bs-target="#carouselMobileIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" id="mobile-prv-btn" type="button" data-bs-target="#carouselMobileIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- mobile carousel -->
+
+    <section id="3rd" class="third-page d-none d-lg-block">
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators mb-3">
+            <button type="button" id="build-btn-euro" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active build-btn" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" id="build-btn-track" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" id="build-btn-oem" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="height: 100vh;">
+                <div class="row">
+                  <div class="col-xxl-3 col-lg-4 left-side pt-3 px-5">
+                    <div class="text-center text-white page-title build mb-3">Builds</div>
+                    <div class="spec-sheet px-4 pt-2 text-white">
+                      <div class="build-title text-center page-title mt-2">stance</div>
+                      <div class="d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                        <div class="engine-info text-white main-page-subtitle">: 425HP 2UR-FSE</div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                        <div class="suspension-info text-white main-page-subtitle">: DG5 Coilovers </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                        <div class="brakes-info text-white main-page-subtitle">: ENDLESS BBK  </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                        <div class="wheels-info text-white main-page-subtitle">: KANSEI SEVEN </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                        <div class="tires-info text-white main-page-subtitle">: BFG Rdial T/A </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col container p-0">
+                    <div class="btn-prvw-grp">
+                      <div>
+                        <button id="build1prevBtn" class="btn text-white"><i class="fa-solid fa-location-arrow nxt-btn"></i></button>
+                      </div>
+                      <div>
+                        <button id="build1nextBtn" class="btn text-white"><i class="fa-solid fa-location-arrow prv-btn"></i></button>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="build1img1" src="./assets/img/century-stance.png" class="active">
+                      <img id="build1img2" src="./assets/img/century-stance-wheel.png">
+                      <img id="build1img3" src="./assets/img/century-stance-back.png">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div style="height: 100vh;">
+                <div class="row">
+                  <div class="col-xxl-3 col-lg-4 left-side pt-3 px-5">
+                    <div class="text-center text-white page-title build mb-3">Builds</div>
+                    <div class="spec-sheet px-4 pt-2 text-white">
+                      <div class="build-title text-center page-title mt-2">Armor</div>
+                      <div class="d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                        <div class="engine-info text-white main-page-subtitle">: 700HP 1JZ-GE</div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                        <div class="suspension-info text-white main-page-subtitle">: MCA-PRO D2 </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                        <div class="brakes-info text-white main-page-subtitle">: XAT RACING BBK  </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                        <div class="wheels-info text-white main-page-subtitle">: WORK DURANDAL </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                        <div class="tires-info text-white main-page-subtitle">: Falken ZE914 </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col container p-0">
+                    <div class="btn-prvw-grp">
+                      <div>
+                        <button id="build2prevBtn" class="btn text-white"><i class="fa-solid fa-location-arrow nxt-btn"></i></button>
+                      </div>
+                      <div>
+                        <button id="build2nextBtn" class="btn text-white"><i class="fa-solid fa-location-arrow prv-btn"></i></button>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="build2img1" src="./assets/img/century-armor.png" alt="Image 1" class="active">
+                      <img id="build2img2" src="./assets/img/century-armor-wheel.png" alt="Image 2">
+                      <img id="build2img3" src="./assets/img/century-armor-back.png" alt="Image 3">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div style="height: 100vh;">
+                <div class="row">
+                  <div class="col-xxl-3 col-lg-4 left-side pt-3 px-5">
+                    <div class="text-center text-white page-title build mb-3">Builds</div>
+                    <div class="spec-sheet px-4 pt-2 text-white">
+                      <div class="build-title text-center page-title mt-2">OEM+</div>
+                      <div class="d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/engine-icon.svg"> 
+                        <div class="engine-info text-white main-page-subtitle">: 400HP 2JZ-GE</div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/suspension-icon.svg"> 
+                        <div class="suspension-info text-white main-page-subtitle">: TITAN SP-3 </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/brakes-icon.svg"> 
+                        <div class="brakes-info text-white main-page-subtitle">: ALEKS RACING BBK  </div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/rims-icon.svg"> 
+                        <div class="wheels-info text-white main-page-subtitle">: Ꝏ WERKS LS03</div>
+                      </div>
+                      <div class="mt-4 d-flex">
+                        <img width="60" height="60" class="svg-white spec-icon" src="./assets/icons/tires-icon.svg"> 
+                        <div class="tires-info text-white main-page-subtitle">: IMPERIAL ESport 2 </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col container p-0">
+                    <div class="btn-prvw-grp">
+                      <div>
+                        <button id="build3prevBtn" class="btn text-white"><i class="fa-solid fa-location-arrow nxt-btn"></i></button>
+                      </div>
+                      <div>
+                        <button id="build3nextBtn" class="btn text-white"><i class="fa-solid fa-location-arrow prv-btn"></i></button>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img id="build3img1" src="./assets/img/century-oem.png" alt="Image 1" class="active">
+                      <img id="build3img2" src="./assets/img/century-oem-wheel.png" alt="Image 2">
+                      <img id="build3img3" src="./assets/img/century-oem-back.png" alt="Image 3">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button style="width: 50px;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button style="width: 50px;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/nested-carousel.js"></script>
+    <script src="./js/navlink-change-color.js" defer></script>
+
+  </body>
+
+</html>

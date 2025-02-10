@@ -57,15 +57,15 @@ html {
   background-size: cover;
 }
 .pillar-left{
-  background-image: url(../assets/img/cressida-pillar1.png);
+  background-image: url(../assets/img/cresta-pillar1.png);
 }
 .pillar-center{
   margin-left: 20px;
   margin-right: 20px;
-  background-image: url(../assets/img/cressida-pillar2.png);
+  background-image: url(../assets/img/cresta-pillar2.png);
 }
 .pillar-right{
-  background-image: url(../assets/img/cressida-pillar3.png);
+  background-image: url(../assets/img/cresta-pillar3.png);
 }
 .car-model-container{
   overflow: hidden;
@@ -195,13 +195,13 @@ html {
   border: 2px solid white;
 }
 #build-btn-euro{
-  background-image: url(../assets/img/cressida-fd.png);
+  background-image: url(../assets/img/cresta-drag.png);
 }
 #build-btn-track{
-  background-image: url(../assets/img/cressida-swap.png);
+  background-image: url(../assets/img/cresta-vertex.png);
 }
 #build-btn-oem{
-  background-image: url(../assets/img/cressida-oem.png);
+  background-image: url(../assets/img/cresta-oem.png);
 }
 .engine-info,
 .suspension-info,

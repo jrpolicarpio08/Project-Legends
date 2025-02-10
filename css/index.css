@@ -28,12 +28,16 @@ html {
 .crown{
   background-image: url(../assets/img/crown.png);
 }
+.cresta{
+  background-image: url(../assets/img/cresta.png);
+}
 .cressida{
   background-image: url(../assets/img/cressida.png);
 }
 .chaser,
 .century,
 .crown,
+.cresta,
 .cressida,
 .right-side{
   background-position: center;
