@@ -57,15 +57,15 @@ html {
   background-size: cover;
 }
 .pillar-left{
-  background-image: url(../assets/img/cresta-pillar1.png);
+  background-image: url(../assets/img/century-pillar1.png);
 }
 .pillar-center{
   margin-left: 20px;
   margin-right: 20px;
-  background-image: url(../assets/img/cresta-pillar2.png);
+  background-image: url(../assets/img/century-pillar2.png);
 }
 .pillar-right{
-  background-image: url(../assets/img/cresta-pillar3.png);
+  background-image: url(../assets/img/century-pillar3.png);
 }
 .car-model-container{
   overflow: hidden;
