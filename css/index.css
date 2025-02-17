@@ -11,13 +11,15 @@ html {
 .nav-link:hover{
   color: #fff;
 }
+.hero{
+  background-image: url(../assets/img/hero.png);
+}
 .main-page,
 .third-page,
 .fourth-page,
 .left-side,
 .right-side{
   height: 100vh;
-
 }
 .left-side{
   background-color: #000; 
@@ -39,12 +41,29 @@ html {
 .cressida{
   background-image: url(../assets/img/cressida.png);
 }
+.track{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/track.png");
+}
+.drift{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/drift.png");
+}
+.oem{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/oem.png");
+}
+.euro{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/euro.png");
+}
+.hero,
+.right-side,
 .chaser,
 .century,
 .crown,
 .cresta,
 .cressida,
-.right-side{
+.track,
+.drift,
+.oem,
+.euro{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,11 +167,34 @@ html {
   background-color: transparent;
 }
 .mobile-hero-img{
-  background-image: url(../assets/img/chaser.png);
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/mobile-hero1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
-  
+  .track{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/mobile-track.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .drift{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/mobile-drift.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .oem{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/mobile-oem.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .euro{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/mobile-euro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 } 
