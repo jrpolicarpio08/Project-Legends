@@ -447,4 +447,17 @@ html {
   .build-variant{
     font-size: 40px;
   }
+  .spec-icon{
+    width: 160px;
+    height: 160px;
+  }
+  .engine-info,
+  .suspension-info,
+  .brakes-info,
+  .wheels-info,
+  .tires-info{
+    margin-left: 20px;
+    margin-top: 60px;
+    font-size: 40px;
+}
  }
