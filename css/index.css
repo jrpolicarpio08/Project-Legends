@@ -9,7 +9,7 @@ html {
   color: black;
 }
 .nav-link:hover{
-  color: #fff;
+  color: red;
 }
 .hero{
   background-image: url(../assets/img/hero.png);
@@ -108,14 +108,14 @@ html {
   transform: translate(-50% );
 }
 .badge-icon{
-  width: 250px;
+  width: 15rem;
   filter: brightness(0) invert(1);
 }
 .card {
   display: inline-block;
   background-color: transparent;
-  width: 250px;
-  height: 470px;
+  width: 15.5rem;
+  height: 30rem;
   perspective: 1000px;
   font-family: sans-serif;
 }
@@ -127,7 +127,7 @@ html {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.card:hover .card-inner {
+.card:hover .card-inner{
   transform: rotateY(180deg);
 }
 .card-front, .card-back {
@@ -149,13 +149,115 @@ html {
   width: 100%;
   height: 200px;
   border-radius: 0px;
-  background-color: red;
   padding: 30px;
+}
+.car-chassis{
+  font-size: 1.5rem;
 }
 .card-description{
   margin-top: -0.4rem;
   font-size: 0.65rem;
   line-height: 0.9rem;
+}
+.divider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.divider{
+  display: flex;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+}
+.divider-circle{
+  margin-left: 3rem;
+  margin-top: -5rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 100%;
+}
+.btn-prvw-grp{
+  position: absolute;
+  z-index: 10;
+  margin-top: 6%;
+  right: 20px;
+}
+.nxt-btn{
+  color: white;
+  font-size: 50px;
+  rotate: -45deg;
+}
+.prv-btn{
+  color: white;
+  font-size: 50px;
+  rotate: 135deg;
+}
+.prv-btn:hover,
+.nxt-btn:hover{
+  color: red;
+  transition: 0.5s;
+}
+.badge-info{
+  position: relative;
+  margin-left: 3vh;
+  margin-top: 9vh;
+}
+.badge-info > div {
+  position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.badge-info > .active {
+  opacity: 1;
+  transform: translateY(0);
+  position: absolute;
+}
+.badges-container {
+  height: 30rem;
+  width: 30rem;
+  position: relative;
+  border: 5px solid white;
+  border-radius: 100%;
+  background-color: #000;
+}
+.badges-container img {
+  margin: 2rem;
+  height: 25rem;
+  width: 25rem;
+  object-position: center;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+.badges-container img.active {
+  top: 0;
+  animation-name: fadeInTop;
+  opacity: 1;
+}
+.badges-container img.prev {
+  top: -100%;
+  animation-name: fadeOutBottom;
+}
+.badges-container img.next {
+  top: 100%;
+  animation-name: fadeOutTop;
+}
+.badge-symbol{
+  width: 100vh;
+}
+.badge-name{
+  font-size: 3rem;
+}
+.badge-description{
+  font-size: 1.2rem;
 }
 .card-mobile{
   margin-top: 12rem;
@@ -197,4 +299,418 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .btn-prvw-grp{
+    rotate: 90deg;
+    margin-top: 70%;
+    right: 40%;
+  }
+  .divider{
+    margin-top: 15rem;
+    height: 15rem;
+  }
+  .divider-circle{
+    margin-top: -20rem;
+    width: 10%;
+  }
+  .badges-container {
+    height: 17rem;
+    width: 17rem;
+  }
+  .badges-container img {
+    margin: 1.9rem;
+    height: 12rem;
+    width: 12rem;
+  }
+  .badge-info{
+    margin-top: 1rem;
+    margin-left: -19rem;
+    width: 100vh;
+    overflow: hidden;
+  }
+  .badge-name{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .badge-description{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-left: 15rem;
+    width: 40%;
+  }
 } 
+
+@media screen and (min-width: 1280px) and (max-width: 1335px) { 
+  .hero-text{
+    font-size: 2rem;
+  }
+  .hero-sub-text{
+    font-size: 1rem;
+  }
+  .hero-btn{
+    padding: 0.5rem;
+    height: 2.5rem;
+  }
+  .badge-info{
+    margin-left: -1%;
+  }
+  .badge-icon{
+    width: 14rem;
+    height: 22rem;
+  }
+  .card{
+    width: 14rem;
+    height: 34rem;
+    margin-top: 0.5rem;
+  }
+  .card-img{
+    height: 10rem;
+  }
+  .car-chassis{
+    font-size: 1.7rem;
+  }
+  .card-description{
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .divider{
+  height: 20rem;
+  }
+  .divider-circle{
+    margin-top: -5rem;
+  }
+  .badges-container {
+    height: 30rem;
+    width: 30rem;
+  }
+  .badges-container img {
+    margin: 4.7rem;
+    height: 20rem;
+    width: 20rem;
+  }
+  .badge-info{
+    margin-left: 2rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .badge-name{
+    font-size: 3rem;
+  }
+  .badge-description{
+    font-size: 1rem;
+    width: 70vh;
+  }
+} 
+
+@media screen and (min-width: 1440px) { 
+  .hero-text{
+    font-size: 2rem;
+  }
+  .hero-sub-text{
+    font-size: 1.2rem;
+  }
+  .hero-btn{
+    padding: 0.5rem;
+    height: 2.5rem;
+  }
+  .badge-info{
+    margin-left: -10%;
+  }
+  .badge-icon{
+    width: 16rem;
+    height: 30rem;
+  }
+  .card{
+    width: 16rem;
+    height: 40rem;
+    margin-top: 0.5rem;
+  }
+  .card-img{
+    height: 15rem;
+  }
+  .car-chassis{
+    font-size: 2rem;
+  }
+  .card-description{
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  .divider{
+  height: 20rem;
+  }
+  .divider-circle{
+    margin-top: -7rem;
+  }
+  .badges-container {
+    height: 35rem;
+    width: 35rem;
+  }
+  .badges-container img {
+    margin: 4.7rem;
+    height: 25rem;
+    width: 25rem;
+  }
+  .badge-info{
+    width: 100%;
+    overflow: hidden;
+  }
+  .badge-name{
+    font-size: 3rem;
+  }
+  .badge-description{
+    font-size: 1rem;
+  }
+} 
+
+@media screen and (min-width: 1536px) { 
+  .hero-text{
+    font-size: 2.5rem;
+  }
+  .hero-sub-text{
+    font-size: 1.2rem;
+  }
+  .hero-btn{
+    padding: 0.5rem;
+    height: 2.5rem;
+  }
+  .badge-info{
+    margin-left: -14%;
+  }
+  .badge-icon{
+    width: 17rem;
+    height: 30rem;
+  }
+  .card{
+    width: 18rem;
+    height: 40rem;
+    margin-top: 0.5rem;
+  }
+  .card-img{
+    height: 18rem;
+  }
+  .car-chassis{
+    font-size: 2rem;
+  }
+  .card-description{
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+  .btn-prvw-grp{
+    margin-top: 7%;
+    right: 20px;
+  }
+  .divider{
+    height: 20rem;
+  }
+  .divider-circle{
+    margin-top: -7rem;
+  }
+  .badges-container {
+    height: 35rem;
+    width: 35rem;
+  }
+  .badges-container img {
+    margin: 4.7rem;
+    height: 25rem;
+    width: 25rem;
+  }
+  .badge-info{
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+  }
+  .badge-name{
+    font-size: 4rem;
+  }
+  .badge-description{
+    width: 90vh;
+  }
+} 
+
+@media screen and (min-width: 1920px) { 
+  .hero-text{
+    font-size: 3rem;
+  }
+  .hero-sub-text{
+    font-size: 1.5rem;
+  }
+  .hero-btn{
+    padding: 1rem;
+    height: 4rem;
+  }
+  .badge-info{
+    margin-left: -17%;
+  }
+  .badge-icon{
+    width: 22rem;
+    height: 40rem;
+  }
+  .card{
+    width: 22rem;
+    height: 50rem;
+    margin-top: 1rem;
+  }
+  .card-img{
+    height: 20rem;
+  }
+  .car-chassis{
+    font-size: 2.5rem;
+  }
+  .card-description{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .btn-prvw-grp{
+    margin-top: 7%;
+    right: 20px;
+  }
+  .divider{
+    height: 20rem;
+  }
+  .divider-circle{
+    margin-top: -10rem;
+  }
+  .badges-container {
+    margin-left: 5rem;
+    height: 40rem;
+    width: 40rem;
+  }
+  .badges-container img {
+    margin: 4.7rem;
+    height: 30rem;
+    width: 30rem;
+  }
+  .badge-info{
+    margin-top: 2.5rem;
+    margin-left: 17rem;
+  }
+  .badge-name{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 2560px) { 
+  .hero-text{
+    font-size: 4rem;
+  }
+  .hero-sub-text{
+    font-size: 2rem;
+  }
+  .card{
+    margin-top: 5rem;
+    width: 30rem;
+    height: 60rem;
+  }
+  .card-img{
+    height: 25rem;
+  }
+  .car-chassis{
+    font-size: 3.5rem;
+  }
+  .card-description{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .badge-icon{
+    width: 30rem;
+    height: 50rem;
+  }
+  .view-btn{
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .btn-prvw-grp{
+    margin-top: 7%;
+    right: 20px;
+  }
+  .divider{
+    height: 30rem;
+  }
+  .divider-circle{
+    margin-top: -10rem;
+  }
+  .badges-container {
+    margin-left: 5rem;
+    height: 50rem;
+    width: 50rem;
+  }
+  .badges-container img {
+    margin: 7.2rem;
+    height: 35rem;
+    width: 35rem;
+  }
+  .badge-info{
+    margin-top: 3rem;
+    margin-left: 28rem;
+  }
+  .badge-name{
+    font-size: 6rem;
+  }
+  .badge-description{
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 3440px) { 
+  .hero-text{
+    font-size: 5rem;
+  }
+  .hero-sub-text{
+    font-size: 2rem;
+  }
+  .hero-btn{
+    padding: 1rem;
+    height: 4rem;
+  }
+  .card{
+    margin-top: 5rem;
+    width: 40rem;
+    height: 60rem;
+  }
+  .card-img{
+    height: 25rem;
+  }
+  .car-chassis{
+    font-size: 5rem;
+  }
+  .card-description{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .badge-icon{
+    width: 35rem;
+    height: 50rem;
+  }
+  .view-btn{
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .btn-prvw-grp{
+    margin-top: 5%;
+    right: 20px;
+  }
+  .divider{
+    height: 30rem;
+  }
+  .divider-circle{
+    margin-top: -10rem;
+  }
+  .badges-container {
+    margin-left: 5rem;
+    height: 50rem;
+    width: 50rem;
+  }
+  .badges-container img {
+    margin: 7.2rem;
+    height: 35rem;
+    width: 35rem;
+  }
+  .badge-info{
+    margin-top: 3rem;
+    margin-left: 28rem;
+  }
+  .badge-name{
+    font-size: 6rem;
+  }
+  .badge-description{
+    font-size: 2.2rem;
+  }
+}

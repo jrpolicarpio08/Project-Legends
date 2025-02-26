@@ -88,9 +88,9 @@ const changeNavAppearance = () => {
                 togglerBorder = 'white';
                 hoverColor = 'red';
             } else if (sectionId === '4th') {
-                linkColor = 'black';
-                togglerColor = 'black';
-                togglerBorder = 'black';
+                linkColor = 'white';
+                togglerColor = 'white';
+                togglerBorder = 'white';
                 hoverColor = 'red';
             }
 

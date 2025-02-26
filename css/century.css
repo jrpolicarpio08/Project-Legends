@@ -238,32 +238,32 @@ html {
   background-size: cover;
   height: 70vh;
 }
-.modal-img-fd{
-  background-image: url(../assets/img/mobile-cressida-fd.png);
+.modal-img-stance{
+  background-image: url(../assets/img/mobile-century-stance.png);
 }
-.modal-img-fd-wheel{
-  background-image: url(../assets/img/mobile-cressida-fd-wheel.png);
+.modal-img-stance-wheel{
+  background-image: url(../assets/img/mobile-century-stance-wheel.png);
 }
-.modal-img-fd-back{
-  background-image: url(../assets/img/mobile-cressida-fd-back.png);
+.modal-img-stance-back{
+  background-image: url(../assets/img/mobile-century-stance-back.png);
 }
-.modal-img-swap{
-  background-image: url(../assets/img/mobile-cressida-swap.png);
+.modal-img-armor{
+  background-image: url(../assets/img/mobile-century-armor.png);
 }
-.modal-img-swap-wheel{
-  background-image: url(../assets/img/mobile-cressida-swap-wheel.png);
+.modal-img-armor-wheel{
+  background-image: url(../assets/img/mobile-century-armor-wheel.png);
 }
-.modal-img-swap-back{
-  background-image: url(../assets/img/mobile-cressida-swap-back.png);
+.modal-img-armor-back{
+  background-image: url(../assets/img/mobile-century-armor-back.png);
 }
 .modal-img-oem{
-  background-image: url(../assets/img/mobile-cressida-oem.png);
+  background-image: url(../assets/img/mobile-century-oem.png);
 }
 .modal-img-oem-wheel{
-  background-image: url(../assets/img/mobile-cressida-oem-wheel.png);
+  background-image: url(../assets/img/mobile-century-oem-wheel.png);
 }
 .modal-img-oem-back{
-  background-image: url(../assets/img/mobile-cressida-oem-back.png);
+  background-image: url(../assets/img/mobile-century-oem-back.png);
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
   .pillar{

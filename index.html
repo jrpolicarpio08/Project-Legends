@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="scss/helpers.scss">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
 
@@ -28,10 +28,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#3rd">Builds</a>
-            </li>						
+            </li>					
             <li class="nav-item">
               <a class="nav-link" href="#4th">Badges</a>
-            </li>
+            </li>				
           </ul>		  
         </div>
       </div>
@@ -42,9 +42,9 @@
         <div class="row">
           <div class="col-lg-5 left-side d-none d-md-block">
             <div class="pt-5">
-              <h2 class="pt-5 mt-4 pb-3 page-title text-white">Welcome To The <br> Round Table</h2>
-              <p class="pb-3 main-page-subtitle text-white"> Toyota’s luxury cars, like the elegant Crown, the sporty Chaser, the refined Cresta, and the versatile Mark II, combine sophistication, performance, and innovation. These iconic models showcase Toyota’s commitment to comfort, advanced technology, and timeless design, redefining luxury for those who seek the extraordinary. </p>
-              <a href="#2nd" class="btn btn-outline-light btn-block w-50">Explore</a>
+              <h2 class="pt-5 mt-4 pb-3 page-title text-white hero-text">Welcome To The <br> Round Table</h2>
+              <p class="pb-3 main-page-subtitle text-white hero-sub-text"> Toyota’s luxury cars, like the elegant Crown, the sporty Chaser, the refined Cresta, and the versatile Mark II, combine sophistication, performance, and innovation. These iconic models showcase Toyota’s commitment to comfort, advanced technology, and timeless design, redefining luxury for those who seek the extraordinary. </p>
+              <a href="#2nd" class="btn btn-outline-light btn-block w-50 hero-btn">Explore</a>
             </div>
           </div>
           <div class="col-7 d-sm-none d-md-block hero"></div>
@@ -84,7 +84,7 @@
                     <div class="pt-2">
                       <div class="card-img chaser"></div>
                     </div>
-                    <h3 class="mt-2">JZX100 2JZ-GE</h3>
+                    <div class="mt-2 car-chassis">JZX100 2JZ-GE</div>
                     <p class="text-start card-description">The Toyota Chaser (Japanese: トヨタ・チェイサー, Hepburn: Toyota Cheisā) is a mid-size car produced by Toyota. In the beginning, Chasers were four-door sedans and hardtop sedans; a two-door coupé was available only for the first generation. It was introduced on the Toyota Mark II (X30) platform and was only available at Japanese Toyota Auto Store dealerships as their top-level model.</p>
                     <div class="mt-auto mb-2">
                       <a href="chaser.html" class="px-2 btn btn-outline-light w-100">View</a>
@@ -101,7 +101,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="mb-5">
-                      <img class="badge-icon" src="./assets/icons/century-logo.png">
+                      <img class="badge-icon" src="./assets/icons/century-logo.svg">
                     </div>
                     <h2 class="page-title mobile-car-name">Century</h2>
                   </div>
@@ -109,7 +109,7 @@
                     <div class="pt-2">
                       <div class="card-img century"></div>
                     </div>
-                    <h3 class="mt-2">G60 2UR-FSE</h3>
+                    <div class="mt-2">G60 2UR-FSE</div>
                     <p class="text-start card-description">The Toyota Century (Japanese: トヨタ・センチュリー, Hepburn: Toyota Senchurī) is a lineup of full-size luxury cars and limousines produced mainly for the Japanese market, serving as Toyota's flagship car within Japan; globally the unrelated Lexus LS series is Toyota's flagship luxury model. Production of the Century began in 1967, and the model received only minor changes until redesigns in 1997 and 2018</p>
                     <div class="mt-auto mb-2">
                       <a href="century.html" class="px-2 btn btn-outline-light w-100">View</a>
@@ -128,13 +128,13 @@
                     <div class="mb-5">
                       <img class="badge-icon" src="./assets/icons/crown.svg">
                     </div>
-                    <h2 class="page-title mobile-car-name mt-5 pt-5">crown</h2>
+                    <h2 class="page-title mobile-car-name">crown</h2>
                   </div>
                   <div class="card-back p-2">
                     <div class="pt-2">
                       <div class="card-img crown"></div>
                     </div>
-                    <h3 class="mt-2">S220 8GR-FXS</h3>
+                    <div class="mt-2">S220 8GR-FXS</div>
                     <p class="text-start card-description"> The Toyota Crown (Japanese: トヨタ・クラウン, Hepburn: Toyota Kuraun) is an automobile which has been produced by Toyota in Japan since 1955. It is primarily a line of mid-size luxury cars that is marketed as an upmarket offering in the Toyota lineup. it has served as the mainstream sedan from Toyota, its existence holds the distinction of being one of the longest-running Toyota model.</p>
                     <div class="mt-auto mb-2">
                       <a href="crown.html" class="px-2 btn btn-outline-light w-100">View</a>
@@ -150,7 +150,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="mb-5">
-                      <img src="./assets/icons/cresta-logo.png" width="250">
+                      <img class="badge-icon" src="./assets/icons/cresta-logo.svg">
                     </div>
                     <h2 class="page-title mobile-car-name">Cresta</h2>
                   </div>
@@ -158,7 +158,7 @@
                     <div class="pt-2">
                       <div class="card-img cresta"></div>
                     </div>
-                    <h3 class="mt-2">X100 1JZ-GTE</h3>
+                    <div class="mt-2">X100 1JZ-GTE</div>
                     <p class="text-start card-description"> The Toyota Cresta (Japanese: トヨタ・クレスタ, Hepburn: Toyota Kuresuta) is a mid-size luxury car built by Toyota. It was launched in 1980 and shared the chassis with the Mark II/Cressida and Chaser and was the top-level car at Japanese dealership Toyota Vista Store.The Cresta was produced for five generations, and production stopped in 2001 when it was merged with the Chaser to form the short-lived Verossa.</p>
                     <div class="mt-auto mb-2">
                       <a href="century.html" class="px-2 btn btn-outline-light w-100">View</a>
@@ -175,7 +175,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="mb-5">
-                      <img src="./assets/icons/mark2-logo.png" width="250">
+                      <img class="badge-icon" src="./assets/icons/cressida-logo.svg">
                     </div>
                     <h2 class="page-title mobile-car-name">Cressida</h2>
                   </div>
@@ -183,12 +183,12 @@
                     <div class="pt-2">
                       <div class="card-img cressida"></div>
                     </div>
-                    <h3 class="mt-2">MK2 2JZ-GE</h3>
+                    <div class="mt-2">MK2 2JZ-GE</div>
                     <p class="text-start card-description">  The Toyota Mark II (Japanese: トヨタ・マークII, Hepburn: Toyota Māku Tsū) is a compact, later mid-size sedan manufactured and marketed in Japan by Toyota between 1968 and 2004
     
                       the model was marketed as the Toyota Corona Mark II. In most export markets, Toyota marketed the vehicle as the Toyota Cressida between 1976 and 1992 across four generations. Toyota replaced the Cressida with the Toyota Avalon.</p>
                     <div class="mt-auto mb-2">
-                      <a href="century.html" class="px-2 btn btn-outline-light w-100">View</a>
+                      <a href="cressida.html" class="px-2 btn btn-outline-light w-100">View</a>
                     </div>
                   </div>
                 </div>
@@ -221,16 +221,16 @@
                 <div class="mb-5">
                   <img class="badge-icon" src="./assets/icons/chaser-logo.svg">
                 </div>
-                <h2 class="page-title">Chaser</h2>
+                <h2 class="page-title pt-3 mt-1">Chaser</h2>
               </div>
               <div class="card-back p-2">
                 <div class="pt-2">
                   <div class="card-img chaser"></div>
                 </div>
-                <h3 class="mt-2">JZX100 2JZ-GE</h3>
+                <div class="mt-2 mb-2 car-chassis">JZX100 2JZ-GE</div>
                 <p class="text-start card-description">The Toyota Chaser (Japanese: トヨタ・チェイサー, Hepburn: Toyota Cheisā) is a mid-size car produced by Toyota. In the beginning, Chasers were four-door sedans and hardtop sedans; a two-door coupé was available only for the first generation. It was introduced on the Toyota Mark II (X30) platform and was only available at Japanese Toyota Auto Store dealerships as their top-level model.</p>
                 <div class="mt-auto mb-2">
-                  <a href="chaser.html" class="px-2 btn btn-outline-light w-100">View</a>
+                  <a href="chaser.html" class="btn btn-outline-light w-100 view-btn">View</a>
                 </div>
               </div>
             </div>
@@ -240,18 +240,18 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="mb-5">
-                  <img class="badge-icon" src="./assets/icons/century-logo.png">
+                  <img class="badge-icon" src="./assets/icons/century-logo.svg">
                 </div>
-                <h2 class="page-title">Century</h2>
+                <h2 class="page-title pt-3 mt-1">Century</h2>
               </div>
               <div class="card-back p-2">
                 <div class="pt-2">
                   <div class="card-img century"></div>
                 </div>
-                <h3 class="mt-2">G60 2UR-FSE</h3>
+                <div class="mt-2 mb-2 car-chassis">G60 2UR-FSE</div>
                 <p class="text-start card-description">The Toyota Century (Japanese: トヨタ・センチュリー, Hepburn: Toyota Senchurī) is a lineup of full-size luxury cars and limousines produced mainly for the Japanese market, serving as Toyota's flagship car within Japan; globally the unrelated Lexus LS series is Toyota's flagship luxury model. Production of the Century began in 1967, and the model received only minor changes until redesigns in 1997 and 2018</p>
                 <div class="mt-auto mb-2">
-                  <a href="century.html" class="px-2 btn btn-outline-light w-100">View</a>
+                  <a href="century.html" class="px-2 btn btn-outline-light w-100 view-btn">View</a>
                 </div>
               </div>
             </div>
@@ -269,10 +269,10 @@
                 <div class="pt-2">
                   <div class="card-img crown"></div>
                 </div>
-                <h3 class="mt-2">S220 8GR-FXS</h3>
+                <div class="mt-2 mb-2 car-chassis">S220 8GR-FXS</div>
                 <p class="text-start card-description"> The Toyota Crown (Japanese: トヨタ・クラウン, Hepburn: Toyota Kuraun) is an automobile which has been produced by Toyota in Japan since 1955. It is primarily a line of mid-size luxury cars that is marketed as an upmarket offering in the Toyota lineup. it has served as the mainstream sedan from Toyota, its existence holds the distinction of being one of the longest-running Toyota model.</p>
                 <div class="mt-auto mb-2">
-                  <a href="crown.html" class="px-2 btn btn-outline-light w-100">View</a>
+                  <a href="crown.html" class="px-2 btn btn-outline-light w-100 view-btn">View</a>
                 </div>
               </div>
             </div>
@@ -282,18 +282,18 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="mb-5">
-                  <img src="./assets/icons/cresta-logo.png" width="250">
+                  <img class="badge-icon" src="./assets/icons/cresta-logo.svg">
                 </div>
-                <h2 class="page-title">Cresta</h2>
+                <h2 class="page-title pt-3 mt-1">Cresta</h2>
               </div>
               <div class="card-back p-2">
                 <div class="pt-2">
                   <div class="card-img cresta"></div>
                 </div>
-                <h3 class="mt-2">X100 1JZ-GTE</h3>
+                <div class="mt-2 mb-2 car-chassis">X100 1JZ-GTE</div>
                 <p class="text-start card-description"> The Toyota Cresta (Japanese: トヨタ・クレスタ, Hepburn: Toyota Kuresuta) is a mid-size luxury car built by Toyota. It was launched in 1980 and shared the chassis with the Mark II/Cressida and Chaser and was the top-level car at Japanese dealership Toyota Vista Store.The Cresta was produced for five generations, and production stopped in 2001 when it was merged with the Chaser to form the short-lived Verossa.</p>
                 <div class="mt-auto mb-2">
-                  <a href="cresta.html" class="px-2 btn btn-outline-light w-100">View</a>
+                  <a href="cresta.html" class="px-2 btn btn-outline-light w-100 view-btn">View</a>
                 </div>
               </div>
             </div>
@@ -303,20 +303,20 @@
             <div class="card-inner">
               <div class="card-front">
                 <div class="mb-5">
-                  <img src="./assets/icons/mark2-logo.png" width="250">
+                  <img class="badge-icon" src="./assets/icons/cressida-logo.svg">
                 </div>
-                <h2 class="page-title">Cressida</h2>
+                <h2 class="page-title pt-3 mt-1">Cressida</h2>
               </div>
               <div class="card-back p-2">
                 <div class="pt-2">
                   <div class="card-img cressida"></div>
                 </div>
-                <h3 class="mt-2">MK2 2JZ-GE</h3>
+                <div class="mt-2 mb-2 car-chassis">MK2 2JZ-GE</div>
                 <p class="text-start card-description">  The Toyota Mark II (Japanese: トヨタ・マークII, Hepburn: Toyota Māku Tsū) is a compact, later mid-size sedan manufactured and marketed in Japan by Toyota between 1968 and 2004
 
                   the model was marketed as the Toyota Corona Mark II. In most export markets, Toyota marketed the vehicle as the Toyota Cressida between 1976 and 1992 across four generations. Toyota replaced the Cressida with the Toyota Avalon.</p>
                 <div class="mt-auto mb-2">
-                  <a href="cressida.html" class="px-2 btn btn-outline-light w-100">View</a>
+                  <a href="cressida.html" class="px-2 btn btn-outline-light w-100 view-btn">View</a>
                 </div>
               </div>
             </div>
@@ -377,43 +377,80 @@
       </div>
     </section>
 
-    <section id="4th" class="fourth-page">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 left-side p-5">
-            <h2 class="text-white car-name">Vehicles<br> Impression</h2>
-            <div class="mt-4 img-container">
+    <section id="4th" class="second-page">
+      <div class="divider-container">
+        <div class="divider">
 
+          <div class="divider-circle">
+            <div class="badges-container">
+              <img id="build1img1" src="./assets/icons/chaser-logo.svg" alt="Image 1" class="active badge-icon">
+              <img id="build1img2" src="./assets/icons/century-logo.svg" alt="Image 2" class="badge-icon">
+              <img id="build1img3" src="./assets/icons/crown.svg" alt="Image 3" class="badge-icon">
+              <img id="build1img4" src="./assets/icons/cresta-logo.svg" alt="Image 4" class="badge-icon">
+              <img id="build1img5" src="./assets/icons/cressida-logo.svg" alt="Image 5" class="badge-icon">
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 right-side px-4">
-            <div class="car-badge">
-              <h1 class="pt-5">Cresta<i class="fa-solid fa-crown"></i></h1>
-              <p class="car-badge-info">The Toyota Cresta is a premium sedan that blends refined design with impressive performance. With its sleek appearance and powerful engine options, it provides a smooth, engaging drive, offering both luxury and strength.</p>
+
+          <div class="badge-info">
+            <div id="build1txt1" class="active text-white" >
+              <div class="badge-symbol">
+                <div class="page-title badge-name">Chaser</div>
+                <p class="badge-description">The Toyota Chaser is a high-performance luxury sedan, renowned for its powerful engines and dynamic driving experience. With its sleek design and robust inline-six engine, it offers a perfect balance of speed, comfort, and sophistication, making it a favorite among driving enthusiasts.</p>
+              </div>
             </div>
-            <div class="car-badge">
-              <h1>Crown<i class="fa-solid fa-crown"></i></h1>
-              <p class="car-badge-info">The Toyota Crown, introduced in 1955, is Toyota's longest-running sedan, renowned for its luxury and innovation. Often used by government officials in Japan, it symbolizes prestige and reliability, evolving into a global icon of comfort and sophistication.</p>
+            <div id="build1txt2" class="text-white">
+              <div class="badge-symbol">
+                <div class="page-title badge-name">Century</div>
+                <div class="badge-description">
+                  <p>The Toyota Century is Japan’s ultimate luxury sedan, embodying elegance, craftsmanship, and exclusivity. Introduced in 1967, it was designed as a flagship vehicle for dignitaries and business elites, offering timeless design and exceptional comfort.</p>
+                </div>
+              </div>
             </div>
-            <div class="car-badge">
-              <h1>Chaser<i class="fa-solid fa-crown"></i></h1>
-              <p class="car-badge-info">The Toyota Chaser is a high-performance luxury sedan, renowned for its powerful engines and dynamic driving experience. With its sleek design and robust inline-six engine, it offers a perfect balance of speed, comfort, and sophistication, making it a favorite among driving enthusiasts.</p>
+            <div id="build1txt3" class="text-white">
+              <div class="badge-symbol">
+                <div class="page-title badge-name">Crown</div>
+                <div class="badge-description">
+                  <p>The Toyota Crown, introduced in 1955, is Toyota's longest-running sedan, renowned for its luxury and innovation. Often used by government officials in Japan, it symbolizes prestige and reliability, evolving into a global icon of comfort and sophistication.</p>
+                </div>
+              </div>
             </div>
-            <div class="car-badge">
-              <h1>Century<i class="fa-solid fa-crown"></i></h1>
-              <p class="car-badge-info">The Toyota Century is Japan’s ultimate luxury sedan, embodying elegance, craftsmanship, and exclusivity. Introduced in 1967, it was designed as a flagship vehicle for dignitaries and business elites, offering timeless design and exceptional comfort</p>
+            <div id="build1txt4" class="text-white">
+              <div class="badge-symbol">
+                <div class="page-title badge-name">Cresta</div>
+                <div class="badge-description">
+                  <p>The Toyota Cresta is a premium sedan that blends refined design with impressive performance. With its sleek appearance and powerful engine options, it provides a smooth, engaging drive, offering both luxury and strength.</p>
+                </div>
+              </div>
             </div>
-            <div class="car-badge">
-              <h1>Cressida<i class="fa-solid fa-crown"></i></h1>
-              <p class="car-badge-info">The Toyota Mark II is a luxury sedan offering powerful engines, including inline-six and V6 options, for a premium driving experience. It blends high performance with refined comfort, making it a top choice for those seeking both power and elegance.</p>
+            <div id="build1txt5" class="text-white">
+              <div class="badge-symbol">
+                <div class="page-title badge-name">Cressida</div>
+                <div class="badge-description">
+                  <p>The Toyota Mark II is a luxury sedan offering powerful engines, including inline-six and V6 options, for a premium driving experience. It blends high performance with refined comfort, making it a top choice for those seeking both power and elegance.</p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="btn-prvw-grp">
+            <div>
+              <button id="build1prevBtn" class="btn text-white"><i class="fa-solid fa-location-arrow nxt-btn"></i></button>
+            </div>
+            <div>
+              <button id="build1nextBtn" class="btn text-white"><i class="fa-solid fa-location-arrow prv-btn"></i></button>
+            </div>
+          </div>
+
         </div>
+
+
+        
       </div>
     </section>
 
+    <script src="./js/badge-carousel.js" defer></script>
     <script src="./js/navlink-change-color-index.js" defer></script>
 
-  </body>
+  </body>                           
 
 </html>

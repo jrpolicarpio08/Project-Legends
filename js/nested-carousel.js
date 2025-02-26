@@ -40,4 +40,5 @@ function initializeImageCarousel(carouselId, imagesIds, prevBtnId, nextBtnId) {
 initializeImageCarousel('build1', ['build1img1', 'build1img2', 'build1img3'], 'build1prevBtn', 'build1nextBtn');
 initializeImageCarousel('build2', ['build2img1', 'build2img2', 'build2img3'], 'build2prevBtn', 'build2nextBtn');
 initializeImageCarousel('build3', ['build3img1', 'build3img2', 'build3img3'], 'build3prevBtn', 'build3nextBtn');
+initializeImageCarousel('build4', ['build4img1', 'build4img2', 'build4img3' , 'build4img4' , 'build4img5'], 'build4prevBtn', 'build4nextBtn');
 
