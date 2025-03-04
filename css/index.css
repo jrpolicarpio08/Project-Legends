@@ -159,31 +159,9 @@ html {
   font-size: 0.65rem;
   line-height: 0.9rem;
 }
-.divider-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.divider{
-  display: flex;
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  width: 100%;
-  height: 20rem;
-  background-color: black;
-}
-.divider-circle{
-  margin-left: 3rem;
-  margin-top: -5rem;
-  width: 30rem;
-  height: 30rem;
-  border-radius: 100%;
-}
 .btn-prvw-grp{
   position: absolute;
   z-index: 10;
-  margin-top: 6%;
   right: 20px;
 }
 .nxt-btn{
@@ -201,36 +179,25 @@ html {
   color: red;
   transition: 0.5s;
 }
-.badge-info{
-  position: relative;
-  margin-left: 3vh;
-  margin-top: 9vh;
-}
-.badge-info > div {
+.badge-container{
   position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  height: 30rem;
+  width: 100%;
+  padding: 2rem;
 }
-.badge-info > .active {
-  opacity: 1;
-  transform: translateY(0);
-  position: absolute;
-}
-.badges-container {
+.badge-frame{
+  background-color: black;
+  border: solid 5px white;
+  border-radius: 100%;
   height: 30rem;
   width: 30rem;
-  position: relative;
-  border: 5px solid white;
-  border-radius: 100%;
-  background-color: #000;
+  margin-top: 3rem;
 }
 .badges-container img {
-  margin: 2rem;
-  height: 25rem;
-  width: 25rem;
+  margin-left: 3.5rem;
+  margin-top: 8rem;
+  height: 22rem;
+  width: 22rem;
   object-position: center;
   position: absolute;
   animation-duration: 0.5s;
@@ -250,14 +217,46 @@ html {
   top: 100%;
   animation-name: fadeOutTop;
 }
-.badge-symbol{
-  width: 100vh;
+.divider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.divider{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+}
+.badge-info{
+  position: relative;
+  margin-left: 23rem;
+  margin-top: -11rem;
+  width: 40rem;
+}
+.badge-info > div {
+  position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.badge-info > .active {
+  opacity: 1;
+  transform: translateY(0);
+  position: absolute;
 }
 .badge-name{
   font-size: 3rem;
 }
 .badge-description{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .card-mobile{
   margin-top: 12rem;
@@ -313,44 +312,40 @@ html {
   .mobile-car-name{
     margin-top: 8rem;
   }
-  .btn-prvw-grp{
-    rotate: 90deg;
-    margin-top: 70%;
-    right: 40%;
-  }
-  .divider{
-    margin-top: 15rem;
-    height: 15rem;
-  }
-  .divider-circle{
-    margin-top: -20rem;
-    width: 10%;
-  }
-  .badges-container {
-    height: 17rem;
-    width: 17rem;
+  .badge-frame{
+    height: 18rem;
+    width: 100%;
   }
   .badges-container img {
-    margin: 1.9rem;
+    margin-top: 8rem;
+    margin-left: 2.8rem;
     height: 12rem;
     width: 12rem;
   }
+  .divider{
+    margin-top: 17rem;
+    height: 15rem;
+  }
   .badge-info{
-    margin-top: 1rem;
-    margin-left: -19rem;
-    width: 100vh;
-    overflow: hidden;
+    position: relative;
+    margin-left: 0rem;
+    width: 21rem;
   }
   .badge-name{
-    margin-top: 0.5rem;
     text-align: center;
     font-size: 2.5rem;
   }
   .badge-description{
-    text-align: center;
     font-size: 0.8rem;
-    margin-left: 15rem;
-    width: 40%;
+    text-align: center;
+  }
+  .btn-prvw-grp{
+    position: absolute;
+    z-index: 10;
+    rotate: 90deg;
+    left: 50%;
+    right: 50%;
+    margin-top: 37rem;
   }
 } 
 
@@ -371,116 +366,48 @@ html {
   }
   .btn-prvw-grp{
     rotate: 90deg;
-    margin-top: 70%;
+    margin-bottom: 27%;
     right: 40%;
   }
   .mobile-car-name{
     margin-top: 1rem;
   }
-  .btn-prvw-grp{
-    rotate: 90deg;
-    margin-top: 57%;
-    right: 40%;
-  }
   .divider{
-    margin-top: 15rem;
-    height: 15rem;
-  }
-  .divider-circle{
-    margin-top: -20rem;
-    width: 10%;
-  }
-  .badges-container {
-    height: 17rem;
-    width: 17rem;
-  }
-  .badges-container img {
-    margin: 1.9rem;
-    height: 12rem;
-    width: 12rem;
+    margin-top: 16rem;
+    height: 11rem;
   }
   .badge-info{
-    margin-top: 0.5rem;
-    margin-left: -14.5rem;
-    width: 100vh;
-    overflow: hidden;
+    position: relative;
+    margin-left: 0rem;
+    width: 21rem;
   }
   .badge-name{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-align: center;
-    font-size: 2.5rem;
-  }
-  .badge-description{
-    text-align: center;
-    font-size: 0.8rem;
-    margin-left: 10.5rem;
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 375px) and (max-width: 1279px) { 
-  .card {
-    width: 20rem;
-    height: 24rem;
-  }
-  .card-img{
-    height: 125px;
-  }
-  .car-chassis{
     font-size: 2rem;
   }
-  .card-description{
-    font-size: 0.6rem;
-    line-height: 1rem;
+  .badge-description{
+    font-size: 0.7rem;
+    text-align: center;
   }
   .btn-prvw-grp{
+    position: absolute;
+    z-index: 10;
     rotate: 90deg;
-    margin-top: 70%;
-    right: 40%;
+    left: 50%;
+    right: 50%;
+    margin-top: 35.5rem;
   }
-  .mobile-car-name{
+  .badge-frame{
+    height: 18rem;
     margin-top: 1rem;
   }
-  .btn-prvw-grp{
-    rotate: 90deg;
-    margin-top: 57%;
-    right: 40%;
-  }
-  .divider{
-    margin-top: 15rem;
-    height: 15rem;
-  }
-  .divider-circle{
-    margin-top: -20rem;
-    width: 10%;
-  }
-  .badges-container {
-    height: 17rem;
-    width: 17rem;
-  }
   .badges-container img {
-    margin: 1.9rem;
+    margin-left: 3.2rem;
+    margin-top: 6rem;
     height: 12rem;
-    width: 12rem;
-  }
-  .badge-info{
-    margin-top: 0.5rem;
-    margin-left: -14.5rem;
-    width: 100vh;
-    overflow: hidden;
-  }
-  .badge-name{
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  .badge-description{
-    text-align: center;
-    font-size: 0.8rem;
-    margin-left: 10.5rem;
-    width: 50%;
   }
 }
-
 @media screen and (min-width: 390px) and (max-width: 1279px) { 
   .track{
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/mobile-track.png");
@@ -531,43 +458,40 @@ html {
   .mobile-car-name{
     margin-top: 10rem;
   }
-  .btn-prvw-grp{
-    rotate: 90deg;
-    margin-top: 57%;
-    right: 40%;
-  }
   .divider{
-    margin-top: 15rem;
-    height: 15rem;
-  }
-  .divider-circle{
-    margin-top: -22rem;
-    width: 15%;
-  }
-  .badges-container {
-    height: 18rem;
-    width: 18rem;
-  }
-  .badges-container img {
-    margin:  2.5rem;
-    height: 12rem;
-    width: 12rem;
+    margin-top: 16rem;
+    height: 13rem;
   }
   .badge-info{
-    margin-top: 0.5rem;
-    margin-left: -21rem;
-    width: 100vh;
-    overflow: hidden;
+    position: relative;
+    margin-left: 0rem;
+    width: 22rem;
   }
   .badge-name{
+    margin-top: 1.5rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .badge-description{
+    font-size: 0.7rem;
     text-align: center;
-    font-size: 0.8rem;
-    margin-left: 16rem;
-    width: 40%;
+  }
+  .btn-prvw-grp{
+    position: absolute;
+    z-index: 10;
+    rotate: 90deg;
+    left: 50%;
+    right: 50%;
+    margin-bottom: -17rem;
+  }
+  .badge-frame{
+    height: 20rem;
+    margin-top: 3rem;
+  }
+  .badges-container img {
+    margin-left: 3.6rem;
+    margin-top: 7rem;
+    height: 15rem;
   }
 } 
 
@@ -621,45 +545,41 @@ html {
   .mobile-car-name{
     margin-top: 4rem;
   }
-  .btn-prvw-grp{
-    rotate: 90deg;
-    margin-top: 55%;
-    right: 40.5%;
-  }
   .divider{
-    margin-top: 15rem;
-    height: 15rem;
-  }
-  .divider-circle{
-    margin-top: -22rem;
-    width: 15%;
-  }
-  .badges-container {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    height: 18rem;
-    width: 18rem;
-  }
-  .badges-container img {
-    margin:  2.5rem;
-    height: 12rem;
-    width: 12rem;
+    margin-top: 16rem;
+    height: 13rem;
   }
   .badge-info{
-    margin-top: 0.5rem;
-    margin-left: -16rem;
-    width: 100vh;
-    overflow: hidden;
+    padding-top: 2rem;
+    position: relative;
+    margin-left: 0rem;
+    width: 22rem;
   }
   .badge-name{
+    margin-top: 1.7rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .badge-description{
-    text-align: center;
     font-size: 0.8rem;
-    margin-left: 11rem;
-    width: 50%;
+    text-align: center;
+  }
+  .btn-prvw-grp{
+    position: absolute;
+    z-index: 10;
+    rotate: 90deg;
+    left: 50%;
+    right: 50%;
+    margin-bottom: -14rem;
+  }
+  .badge-frame{
+    height: 20rem;
+    margin-top: -1rem;
+  }
+  .badges-container img {
+    margin-left: 4.5rem;
+    margin-top: 2rem;
+    height: 18rem;
   }
 } 
 @media screen and (min-width: 414px) and (max-width: 1279px) { 
@@ -718,39 +638,39 @@ html {
     right: 40.5%;
   }
   .divider{
-    margin-top: 15rem;
-    height: 15rem;
-  }
-  .divider-circle{
-    margin-top: -22rem;
-    width: 15%;
-  }
-  .badges-container {
-    margin-top: -1rem;
-    margin-left: 0.5rem;
-    height: 19rem;
-    width: 19rem;
-  }
-  .badges-container img {
-    margin:  2.7rem;
+    margin-top: 16rem;
     height: 13rem;
-    width: 13rem;
   }
   .badge-info{
-    margin-top: 0.5rem;
-    margin-left: -22rem;
-    width: 100vh;
-    overflow: hidden;
+    position: relative;
+    margin-left: 0rem;
+    width: 22rem;
   }
   .badge-name{
+    margin-top: 2.5rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .badge-description{
+    font-size: 0.7rem;
     text-align: center;
-    font-size: 0.8rem;
-    margin-left: 17.25rem;
-    width: 40%;
+  }
+  .btn-prvw-grp{
+    position: absolute;
+    z-index: 10;
+    rotate: 90deg;
+    left: 50%;
+    right: 50%;
+    margin-bottom: -25rem;
+  }
+  .badge-frame{
+    height: 22rem;
+    margin-top: 1rem;
+  }
+  .badges-container img {
+    margin-left: 4.4rem;
+    margin-top: 5rem;
+    height: 18rem;
   }
 } 
 
@@ -774,7 +694,7 @@ html {
   }
   .card{
     width: 14rem;
-    height: 34rem;
+    height: 32.5rem;
     margin-top: 0.5rem;
   }
   .card-img{
@@ -787,32 +707,36 @@ html {
     font-size: 0.7rem;
     line-height: 1rem;
   }
-  .divider{
-  height: 20rem;
-  }
-  .divider-circle{
-    margin-top: -5rem;
-  }
-  .badges-container {
+  .badge-container{
+    position: absolute;
     height: 30rem;
-    width: 30rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .badge-frame{
+    height: 30rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
   }
   .badges-container img {
-    margin: 4.7rem;
+    margin-left: -0.3rem;
+    margin-top: 12.5rem;
     height: 20rem;
-    width: 20rem;
+    width: 30rem;
   }
-  .badge-info{
-    margin-left: 2rem;
-    width: 100%;
-    overflow: hidden;
+  .divider{
+    height: 20rem;
+  }
+  .badge-info{  
+    margin-left: 24rem;
+    margin-top: -11rem;
+    width: 30rem;
   }
   .badge-name{
     font-size: 3rem;
   }
   .badge-description{
     font-size: 1rem;
-    width: 70vh;
   }
 } 
 
@@ -849,24 +773,30 @@ html {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
-  .divider{
-  height: 20rem;
+  .badge-container{
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    padding: 2rem;
   }
-  .divider-circle{
-    margin-top: -7rem;
-  }
-  .badges-container {
-    height: 35rem;
-    width: 35rem;
+  .badge-frame{
+    height: 30rem;
+    margin-top: 11rem;
+    margin-left: 2rem;
   }
   .badges-container img {
-    margin: 4.7rem;
-    height: 25rem;
-    width: 25rem;
+    margin-left: -0.3rem;
+    margin-top: 17rem;
+    height: 20rem;
+    width: 30rem;
   }
-  .badge-info{
-    width: 100%;
-    overflow: hidden;
+  .divider{
+    height: 20rem;
+  }
+  .badge-info{  
+    margin-left: 24rem;
+    margin-top: -10rem;
+    width: 40rem;
   }
   .badge-name{
     font-size: 3rem;
@@ -909,34 +839,36 @@ html {
     font-size: 0.75rem;
     line-height: 1.2rem;
   }
-  .btn-prvw-grp{
-    margin-top: 7%;
-    right: 20px;
+  .badge-container{
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .badge-frame{
+    height: 30rem;
+    margin-top: 11rem;
+    margin-left: 2rem;
+  }
+  .badges-container img {
+    margin-left: -0.3rem;
+    margin-top: 18rem;
+    height: 20rem;
+    width: 30rem;
   }
   .divider{
     height: 20rem;
   }
-  .divider-circle{
-    margin-top: -7rem;
-  }
-  .badges-container {
-    height: 35rem;
-    width: 35rem;
-  }
-  .badges-container img {
-    margin: 4.7rem;
-    height: 25rem;
-    width: 25rem;
-  }
-  .badge-info{
-    margin-top: 1.5rem;
-    margin-left: 7rem;
+  .badge-info{  
+    margin-left: 28rem;
+    margin-top: -10rem;
+    width: 50rem;
   }
   .badge-name{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .badge-description{
-    width: 90vh;
+    font-size: 1rem;
   }
 } 
 
@@ -973,32 +905,37 @@ html {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
-  .btn-prvw-grp{
-    margin-top: 7%;
-    right: 20px;
+  .badge-container{
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .badge-frame{
+    height: 40rem;
+    width: 40rem;
+    margin-top: 12rem;
+    margin-left: 3rem;
+  }
+  .badges-container img {
+    margin-left: 8rem;
+    margin-top: 16rem;
+    height: 35rem;
+    width: 23rem;
   }
   .divider{
     height: 20rem;
   }
-  .divider-circle{
-    margin-top: -10rem;
-  }
-  .badges-container {
-    margin-left: 5rem;
-    height: 40rem;
-    width: 40rem;
-  }
-  .badges-container img {
-    margin: 4.7rem;
-    height: 30rem;
-    width: 30rem;
-  }
-  .badge-info{
-    margin-top: 2.5rem;
-    margin-left: 17rem;
+  .badge-info{  
+    margin-left: 32rem;
+    margin-top: -15rem;
+    width: 55rem;
   }
   .badge-name{
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .badge-description{
+    font-size: 1.5rem;
   }
 }
 
@@ -1032,35 +969,37 @@ html {
     height: 4rem;
     font-size: 2rem;
   }
-  .btn-prvw-grp{
-    margin-top: 7%;
-    right: 20px;
+  .badge-container{
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .badge-frame{
+    height: 50rem;
+    width: 50rem;
+    margin-top: 18rem;
+    margin-left: 3rem;
+  }
+  .badges-container img {
+    margin-left: 10rem;
+    margin-top: 17rem;
+    height: 55rem;
+    width: 30rem;
   }
   .divider{
     height: 30rem;
   }
-  .divider-circle{
-    margin-top: -10rem;
-  }
-  .badges-container {
-    margin-left: 5rem;
-    height: 50rem;
-    width: 50rem;
-  }
-  .badges-container img {
-    margin: 7.2rem;
-    height: 35rem;
-    width: 35rem;
-  }
-  .badge-info{
-    margin-top: 3rem;
+  .badge-info{  
     margin-left: 28rem;
+    margin-top: -20rem;
+    width: 70rem;
   }
   .badge-name{
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .badge-description{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -1098,34 +1037,36 @@ html {
     height: 4rem;
     font-size: 2rem;
   }
-  .btn-prvw-grp{
-    margin-top: 5%;
-    right: 20px;
+  .badge-container{
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .badge-frame{
+    height: 60rem;
+    width: 60rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
+  .badges-container img {
+    margin-left: 12rem;
+    margin-top: 10rem;
+    height: 60rem;
+    width: 35rem;
   }
   .divider{
     height: 30rem;
   }
-  .divider-circle{
-    margin-top: -10rem;
-  }
-  .badges-container {
-    margin-left: 5rem;
-    height: 50rem;
-    width: 50rem;
-  }
-  .badges-container img {
-    margin: 7.2rem;
-    height: 35rem;
-    width: 35rem;
-  }
-  .badge-info{
-    margin-top: 3rem;
+  .badge-info{  
     margin-left: 28rem;
+    margin-top: -18rem;
+    width: 100rem;
   }
   .badge-name{
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .badge-description{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
